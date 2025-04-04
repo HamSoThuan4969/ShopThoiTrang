@@ -1,0 +1,9 @@
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\DAL\bin\Debug\DAL.dll
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\DAL\bin\Debug\DAL.pdb
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\DAL\bin\Debug\DTO.dll
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\DAL\bin\Debug\DTO.pdb
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\DAL\obj\Debug\DAL.dll
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\DAL\obj\Debug\DAL.pdb
