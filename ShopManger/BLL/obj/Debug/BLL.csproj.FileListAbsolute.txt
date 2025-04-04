@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\bin\Debug\BLL.dll
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\bin\Debug\BLL.pdb
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\bin\Debug\DAL.dll
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\bin\Debug\DTO.dll
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\bin\Debug\DAL.pdb
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\bin\Debug\DTO.pdb
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\obj\Debug\BLL.csproj.Up2Date
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\obj\Debug\BLL.dll
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\obj\Debug\BLL.pdb
+=======
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\bin\Debug\BLL.dll
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\bin\Debug\BLL.pdb
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\bin\Debug\DAL.dll
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\bin\Debug\DTO.dll
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\bin\Debug\DAL.pdb
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\bin\Debug\DTO.pdb
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\obj\Debug\BLL.csproj.Up2Date
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\obj\Debug\BLL.dll
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManager\ShopThoiTrang\ShopManger\BLL\obj\Debug\BLL.pdb
+>>>>>>> 392fce294e1dacce545f16fde707ea387faee7e8
