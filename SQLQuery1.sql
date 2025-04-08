@@ -293,4 +293,3 @@ INSERT INTO Sale_OutputInfor (Id, IdSale, IdOutputInfor, DiscountValua)
 VALUES ('SOUTI2', 'SALE2', 'OUTI2', 100);
 
 
-
