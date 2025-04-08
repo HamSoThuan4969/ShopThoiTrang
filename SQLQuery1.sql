@@ -292,7 +292,5 @@ VALUES ('SOUTI1', 'SALE1', 'OUTI1', 50);
 INSERT INTO Sale_OutputInfor (Id, IdSale, IdOutputInfor, DiscountValua) 
 VALUES ('SOUTI2', 'SALE2', 'OUTI2', 100);
 
--- Thêm dữ liệu vào bảng Employment
-INSERT INTO Employment (Id) VALUES ('EMP1');
-INSERT INTO Employment (Id) VALUES ('EMP2');
+
 
