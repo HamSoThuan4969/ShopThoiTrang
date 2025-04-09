@@ -3,11 +3,13 @@ using MaterialSkin.Controls;
 using System.Windows.Forms;
 using DTO;
 using System.Security.Principal;
+using BLL;
 namespace GUI
 {
     public partial class Form1 : MaterialForm
     {
         UsersDTO user = new UsersDTO();
+        UsersBLL userBLL = new UsersBLL();
         public Form1()
         {
             InitializeComponent();
@@ -79,11 +81,25 @@ namespace GUI
 
         private void btLogin_Click(object sender, System.EventArgs e)
         {
-             fRegister f = new fRegister();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
-           
+            // trả lại kết quả nghiệp vụ Login KHÔNG ĐÚNG
+            user.UserName = tbUserName.Text;
+            user.Password = tbPassword.Text;
+
+            string getuser = userBLL.CheckLogin(user);
+
+            switch (getuser)
+            {
+                case "requeid_userName":
+                    MessageBox.Show("Tai khoang khong duoc de trong nhe chua");
+                    return;
+                case "requeid_usePasssword":
+                    MessageBox.Show("Mat khau khong duoc de trong nhe chua");
+                    return;
+                case "Account does not exist":
+                    MessageBox.Show("Tai khoang khong ton tai");
+                    return;
+            }
+            MessageBox.Show("Xin Chúc Mừng BaBy đã Đăng Nhập Thành Vong");
         }
     }
 }

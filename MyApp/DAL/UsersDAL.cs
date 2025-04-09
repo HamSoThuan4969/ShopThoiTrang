@@ -7,12 +7,13 @@ using DTO;
 
 namespace DAL
 {
-    public class UsersDAL
+    public class UsersDAL : DatabaseAccess
     {
         public string CheckLogin(UsersDTO users)
         {
-            string info = CheckLogin(users);
-            return info;
+            string info = CheckLoginDTO(users); // gọi hàm CheckLoginDTO ở DataBaseAccess
+            return info; 
         }
+        // Hàm này sẽ chuyển lên UsersBLL
     }
 }

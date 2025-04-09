@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using DTO;
 
 using System.Data;
+using System.Security.Cryptography;
 
 namespace DAL
 {
@@ -23,8 +24,9 @@ namespace DAL
     // tạo chuỗi kết nối đến cơ sở dữ liệu :
     public class DatabaseAccess
     {
-        public static string CheckLogin(UsersDTO users)
+        public static string CheckLoginDTO(UsersDTO users)
         {
+            
             string user = null;
             // hàm connect cơ sở dữ liệu : 
             SqlConnection conn = SqlConnectionData.Connect();
@@ -32,8 +34,8 @@ namespace DAL
             SqlCommand command = new SqlCommand("CheckLogin", conn);
             command.CommandType = CommandType.StoredProcedure;
             // truyền Paramester vào : 
-            command.Parameters.AddWithValue("@user", users.UserName);
-            command.Parameters.AddWithValue("@pass", users.Password);
+            command.Parameters.AddWithValue("@username", users.UserName);
+            command.Parameters.AddWithValue("@password", users.Password);
             // kiểm tra quyền : ...... đợi làm 
             command.Connection = conn;
             SqlDataReader reader = command.ExecuteReader();
@@ -41,14 +43,22 @@ namespace DAL
             {
                 while(reader.Read())
                 {
-                    user = reader.GetString(0); // cái này chưa tối ưu 
-                    return user;
+                    if (reader.GetFieldType(0) == typeof(String))
+                    {
+                        user=reader.GetString(0);
+
+                    }
+                    else
+                    {
+                        user = reader[0].ToString();
+                    }
+
                 }
                 reader.Close();
                 conn.Close();
             }else
             {
-                return "Tai khoan khong ton tai!!!";
+                return "Account does not exist";
             }
             return user;
                 
