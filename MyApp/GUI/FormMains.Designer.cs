@@ -39,6 +39,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.btRegister = new System.Windows.Forms.Button();
+            this.materialCheckBox1 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.btLogin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +50,7 @@
             this.lbX.Depth = 0;
             this.lbX.Font = new System.Drawing.Font("Roboto", 11F);
             this.lbX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbX.Location = new System.Drawing.Point(743, 0);
+            this.lbX.Location = new System.Drawing.Point(638, 42);
             this.lbX.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbX.Name = "lbX";
             this.lbX.Size = new System.Drawing.Size(26, 27);
@@ -139,10 +141,12 @@
             this.tbShowPassWord.Size = new System.Drawing.Size(169, 27);
             this.tbShowPassWord.TabIndex = 8;
             this.tbShowPassWord.Text = "Show Password";
+            this.tbShowPassWord.Click += new System.EventHandler(this.tbShowPassWord_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            this.panel1.Controls.Add(this.materialCheckBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btRegister);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -176,12 +180,42 @@
             this.btRegister.TabIndex = 0;
             this.btRegister.Text = "REGISTER";
             this.btRegister.UseVisualStyleBackColor = false;
+            this.btRegister.Click += new System.EventHandler(this.btRegister_Click);
+            // 
+            // materialCheckBox1
+            // 
+            this.materialCheckBox1.AutoSize = true;
+            this.materialCheckBox1.Depth = 0;
+            this.materialCheckBox1.Font = new System.Drawing.Font("Roboto", 10F);
+            this.materialCheckBox1.Location = new System.Drawing.Point(69, 585);
+            this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckBox1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCheckBox1.Name = "materialCheckBox1";
+            this.materialCheckBox1.Ripple = true;
+            this.materialCheckBox1.Size = new System.Drawing.Size(212, 30);
+            this.materialCheckBox1.TabIndex = 2;
+            this.materialCheckBox1.Text = "materialCheckBox1";
+            this.materialCheckBox1.UseVisualStyleBackColor = true;
+            // 
+            // btLogin
+            // 
+            this.btLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btLogin.Location = new System.Drawing.Point(454, 582);
+            this.btLogin.Name = "btLogin";
+            this.btLogin.Size = new System.Drawing.Size(130, 33);
+            this.btLogin.TabIndex = 9;
+            this.btLogin.Text = "Login";
+            this.btLogin.UseVisualStyleBackColor = true;
+            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 737);
+            this.Controls.Add(this.btLogin);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tbShowPassWord);
             this.Controls.Add(this.tbPassword);
@@ -195,8 +229,10 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,5 +250,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btRegister;
+        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox1;
+        private System.Windows.Forms.Button btLogin;
     }
 }

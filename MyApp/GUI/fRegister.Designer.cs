@@ -232,6 +232,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fRegister";
             this.Text = "Rigister";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fRegister_FormClosing);
             this.Load += new System.EventHandler(this.fRegister_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

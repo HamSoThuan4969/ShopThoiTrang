@@ -30,6 +30,7 @@ namespace GUI
         private void lbX_Click(object sender, EventArgs e)
         {
             Application.Exit();
+
         }
 
         private void fSingin_Click(object sender, EventArgs e)
@@ -37,6 +38,18 @@ namespace GUI
             Form1 loginForm = new Form1();
             loginForm.Show();
             this.Hide();
+        }
+
+        private void fRegister_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(MessageBox.Show("Are you sure you watn to exit?","titile", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

@@ -1,11 +1,13 @@
 ﻿using MaterialSkin;
 using MaterialSkin.Controls;
 using System.Windows.Forms;
-
+using DTO;
+using System.Security.Principal;
 namespace GUI
 {
     public partial class Form1 : MaterialForm
     {
+        UsersDTO user = new UsersDTO();
         public Form1()
         {
             InitializeComponent();
@@ -22,6 +24,7 @@ namespace GUI
                 Primary.Blue200, Accent.LightBlue200,
                 TextShade.WHITE);
         }
+
 
         private void materialRadioButton1_CheckedChanged(object sender, System.EventArgs e)
         {
@@ -45,7 +48,42 @@ namespace GUI
 
         private void lbX_Click(object sender, System.EventArgs e)
         {
+
             Application.Exit();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(MessageBox.Show("Are you sure you want to exit?", "Titile", MessageBoxButtons.OKCancel) !=System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btRegister_Click(object sender, System.EventArgs e)
+        {
+            fRegister f= new fRegister();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void tbShowPassWord_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void btLogin_Click(object sender, System.EventArgs e)
+        {
+             fRegister f = new fRegister();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+           
         }
     }
 }
