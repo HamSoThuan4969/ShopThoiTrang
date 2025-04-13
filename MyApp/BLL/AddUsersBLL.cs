@@ -12,10 +12,10 @@ namespace BLL
     public class AddUsersBLL
     {
         private AddUsersDAL usersDAL = new AddUsersDAL(); // tạo đối tượng DAL để gọi hàm thêm người dùng
-        public string Register(string username, string password, string email, int idUsersRole)
+        public string Register(string displayName ,string username, string password, int idUsersRole)
         {
             // Value intput
-            if ((string.IsNullOrWhiteSpace(username)) || (string.IsNullOrWhiteSpace(password)) || (string.IsNullOrWhiteSpace(email)) || (idUsersRole<0))
+            if ((string.IsNullOrWhiteSpace(displayName)) || (string.IsNullOrWhiteSpace(username)) || (string.IsNullOrWhiteSpace(password)) || (idUsersRole<0))
             {
                 return "Please enterl all fields !";
             }
@@ -27,16 +27,27 @@ namespace BLL
             {
                 return "Password must be at least 6 characters !";
             }
+            // Kiểm tra trùng lặp userName
+            bool isUserNameExists = usersDAL.CheckUserNameExists(username);
+            if (isUserNameExists)
+            {
+                return "Error: UserName already exists!";
+            }
             // mã hóa mật khẩu (SHA256)
             string hashedPassword = HashPassword(password);
 
             // tạo đối tượng userDTO 
-            UsersDTO user = new UsersDTO(username, hashedPassword, email, idUsersRole);
+            UsersDTO usersDTO = new UsersDTO
+            {
+                DisplayName = displayName,
+                UserName = username,
+                Password = hashedPassword,
+                IdUserRole = idUsersRole
+            };
 
             // Gọi DAL để thêm người dùng
-            bool isAdded = UsersDAL.
-            return isAdded ? "Registration successful!" : "Registration failed. Username or email might already exist.";
-            return null;
+            string result = usersDAL.AddUserDAL(usersDTO); // Gọi hàm thêm người dùng ở DAL
+            return result;
         }
 
 
@@ -51,8 +62,9 @@ namespace BLL
                 {
                     builder.Append(i.ToString("x2"));
                 }
-                return builder.ToString();
+                return builder.ToString(); // trả về chuỗi mã hóa 
             }
         }
+
     }
 }

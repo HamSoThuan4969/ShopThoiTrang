@@ -14,7 +14,7 @@ namespace DTO
         public string Password { get; set; }
         public int IdUserRole { get; set; }
         public UsersDTO() { }
-        public UsersDTO(int id, string displayName, string userName, string password, int idUserRole)
+        public UsersDTO(int id, string displayName, string userName, string password, string Email, int idUserRole)
         {
             Id = id;
             DisplayName = displayName;

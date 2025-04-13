@@ -37,9 +37,9 @@
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbShowPassWord = new MaterialSkin.Controls.MaterialLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.materialCheckBox1 = new MaterialSkin.Controls.MaterialCheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btRegister = new System.Windows.Forms.Button();
-            this.materialCheckBox1 = new MaterialSkin.Controls.MaterialCheckBox();
             this.btLogin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -146,7 +146,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
-            this.panel1.Controls.Add(this.materialCheckBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btRegister);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -154,6 +153,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(404, 737);
             this.panel1.TabIndex = 1;
+            // 
+            // materialCheckBox1
+            // 
+            this.materialCheckBox1.AutoSize = true;
+            this.materialCheckBox1.Depth = 0;
+            this.materialCheckBox1.Font = new System.Drawing.Font("Roboto", 10F);
+            this.materialCheckBox1.Location = new System.Drawing.Point(440, 529);
+            this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckBox1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCheckBox1.Name = "materialCheckBox1";
+            this.materialCheckBox1.Ripple = true;
+            this.materialCheckBox1.Size = new System.Drawing.Size(212, 30);
+            this.materialCheckBox1.TabIndex = 2;
+            this.materialCheckBox1.Text = "materialCheckBox1";
+            this.materialCheckBox1.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -182,22 +197,6 @@
             this.btRegister.UseVisualStyleBackColor = false;
             this.btRegister.Click += new System.EventHandler(this.btRegister_Click);
             // 
-            // materialCheckBox1
-            // 
-            this.materialCheckBox1.AutoSize = true;
-            this.materialCheckBox1.Depth = 0;
-            this.materialCheckBox1.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialCheckBox1.Location = new System.Drawing.Point(69, 585);
-            this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckBox1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckBox1.Name = "materialCheckBox1";
-            this.materialCheckBox1.Ripple = true;
-            this.materialCheckBox1.Size = new System.Drawing.Size(212, 30);
-            this.materialCheckBox1.TabIndex = 2;
-            this.materialCheckBox1.Text = "materialCheckBox1";
-            this.materialCheckBox1.UseVisualStyleBackColor = true;
-            // 
             // btLogin
             // 
             this.btLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -215,6 +214,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 737);
+            this.Controls.Add(this.materialCheckBox1);
             this.Controls.Add(this.btLogin);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tbShowPassWord);
@@ -232,7 +232,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

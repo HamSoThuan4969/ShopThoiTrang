@@ -68,7 +68,7 @@ namespace GUI
 
         private void btRegister_Click(object sender, System.EventArgs e)
         {
-            fRegister f= new fRegister();
+            fAddUserGUI f = new fAddUserGUI();
             this.Hide();
             f.ShowDialog();
             this.Show();
