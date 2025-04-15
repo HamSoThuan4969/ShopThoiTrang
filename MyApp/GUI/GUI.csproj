@@ -70,11 +70,14 @@
     <Compile Include="fRegister.Designer.cs">
       <DependentUpon>fRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="Test.cs">
+    <Compile Include="fManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Test.Designer.cs">
-      <DependentUpon>Test.cs</DependentUpon>
+    <Compile Include="fManager.Designer.cs">
+      <DependentUpon>fManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tets1.cs">
+      <SubType>Form</SubType>
     </Compile>
     <EmbeddedResource Include="fAddUsersGUI.resx">
       <DependentUpon>fAddUsersGUI.cs</DependentUpon>
@@ -94,8 +97,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Test.resx">
-      <DependentUpon>Test.cs</DependentUpon>
+    <EmbeddedResource Include="fManager.resx">
+      <DependentUpon>fManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tets1.resx">
+      <DependentUpon>tets1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

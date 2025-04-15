@@ -101,5 +101,13 @@ namespace GUI
             }
             MessageBox.Show("Xin Chúc Mừng BaBy đã Đăng Nhập Thành Vong");
         }
+
+        private void Test_Click(object sender, System.EventArgs e)
+        {
+            Test1 f = new Test1();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
     }
 }

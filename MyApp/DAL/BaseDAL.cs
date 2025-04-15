@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -11,12 +12,14 @@ namespace DAL
     public class BaseDAL
     {
         // Chuỗi kết nối đặt trong lớp cơ sở
-        protected string connectionString = @"Data Source=KUROBA\SQLSERVER_DEV;Initial Catalog=ShopThoiTrang;Integrated Security=True";
-
+        private string connectionString = @"Data Source=KUROBA\SQLSERVER_DEV;Initial Catalog=ShopThoiTrang;Integrated Security=True";
+        
         // Hàm tạo kết nối
         protected SqlConnection GetConnection()
         {
             return new SqlConnection(connectionString);
         }
+       
     }
+
 }
