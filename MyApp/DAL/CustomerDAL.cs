@@ -15,6 +15,7 @@ namespace DAL
         public List<CustomerDTO> GetCustomer()
         {
             string query = "SELECT Id, DisplayName, IdGroupCustomer, Address, Phone, Email, DateContract, MoreInfor, IdUserRole FROM Customer";
+            var a = 1;
             return dataProvider.ExecuteQuery<CustomerDTO>(query);   
         }
         public List<CustomerDTO> AddCustomerDTO()
