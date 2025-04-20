@@ -104,7 +104,7 @@ namespace GUI
 
         private void Test_Click(object sender, System.EventArgs e)
         {
-            Test1 f = new Test1();
+            fManager f = new fManager();
             this.Hide();
             f.ShowDialog();
             this.Show();

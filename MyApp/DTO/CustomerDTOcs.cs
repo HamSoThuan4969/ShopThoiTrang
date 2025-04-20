@@ -8,15 +8,15 @@ namespace DTO
 {
     public class CustomerDTO
     {
-        private string Id { get; set; }
-        private string DisplayName { get; set; }
-        private string IdGroupCustomer { get; set; }
-        private string Address { get; set; }
-        private string Phone { get; set; }
-        private string Email { get; set; }
-        private DateTime DateContract { get; set; }
-        private string MoreInfor { get; set; }
-        private int IdUserRole { get; set; }
+        public string Id { get; set; }
+        public string DisplayName { get; set; }
+        public string IdGroupCustomer { get; set; }
+        public string Address { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+        public DateTime DateContract { get; set; }
+        public string MoreInfor { get; set; }
+        public int IdUserRole { get; set; }
     }
 
 }

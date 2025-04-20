@@ -6,31 +6,70 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Reflection;
 
 namespace DAL
 {
     public class DataProvider
     {
         private string conn = @"Data Source=KUROBA\SQLSERVER_DEV;Initial Catalog=ShopThoiTrang;Integrated Security=True";
+                              
 
         // Thực thi trả dữ liệu về DataTable ( Dùng SELECT )
-        public DataTable ExcuteQuery(string query, object[] parameter = null)
-        {
-            DataTable data = new DataTable();
-            using (SqlConnection connection = new SqlConnection(conn))
+        //public DataTable ExcuteQuery(string query, object[] parameter = null)
+        //{
+        //    DataTable data = new DataTable();
+        //    using (SqlConnection connection = new SqlConnection(conn))
+        //    {
+        //        connection.Open();
+        //        using (SqlCommand cmd = connection.CreateCommand())
+        //        {
+        //            AddParameter(cmd, query, parameter); // thêm các tham số vào lệnh cmd
+        //            using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) // sử dụng SqlDataAdapter để thực thi lệnh cmd
+        //            {
+        //                adapter.Fill(data); // đổ dữ liệu vào DataTable
+        //            }
+        //        }
+        //    }
+        //    return data;
+        //}
+        
+            public List<T> ExecuteQuery<T>(string query, object[] parameter =null) where T : new()
             {
-                connection.Open();
-                using (SqlCommand cmd = connection.CreateCommand())
+                List<T> list = new List<T>();
+                using(SqlConnection connection = new SqlConnection(conn))
                 {
-                    AddParameter(cmd, query, parameter); // thêm các tham số vào lệnh cmd
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) // sử dụng SqlDataAdapter để thực thi lệnh cmd
+                    connection.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
-                        adapter.Fill(data); // đổ dữ liệu vào DataTable
+                        AddParameter(cmd, query, parameter); // thêm các tham số vào lệnh cmd
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read()) 
+                            {
+                                T obj = new T(); // khỏi tạo đối tượng 
+                                // duyệt từng thuộc tính của đối tượng
+                                for ( int i =0; i< reader.FieldCount; i++) // fileCount trả về số cột trong bảng
+                                {
+                                    string proName = reader.GetName(i); // lấy tên thuộc tính ( tên cột ) 
+                                    PropertyInfo pro = typeof(T).GetProperty(proName); // lấy thuộc tính của đối tượng
+                                    if( pro != null &&  reader[proName] != DBNull.Value)// kiểm tra thuộc tính có null không 
+                                    {
+                                        pro.SetValue(obj, Convert.ChangeType(reader[proName], pro.PropertyType)); // kiểm tra thuộc tính có thể đọc không
+                                    }
+                                }
+                            list.Add(obj); // thêm đối tượng vào danh sách
+                        }
+                        }
                     }
                 }
-            }
-            return data;
+                return list; // trả về danh sách đối tượng
         }
+
+
+
+
+
         // hàm thực thi lệnh Sql trả về số row bị ảnh hưởng qua các (INSERT, UPDATE, DELETE)
         public int ExecuteNonQuery(string query, object[] parameter = null)
         {
@@ -76,7 +115,7 @@ namespace DAL
             return cmd.ExecuteReader(CommandBehavior.CloseConnection); // thực thi lệnh cmd và trả về SqlDataReader
 
         }
-
+        // truyền giá trị vào các tham số của lệnh SqlCommand
         public void AddParameter(SqlCommand cmd, string query, object[] parameter = null)
         {
 
