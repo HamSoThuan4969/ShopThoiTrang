@@ -3,19 +3,47 @@
   "WorkspaceRootPath": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\gui\\fmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|solutionrelative:gui\\fmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dal\\addusersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|solutionrelative:dal\\addusersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\gui\\fmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|solutionrelative:gui\\fmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|c:\\users\\kuroba\\onedrive - tr\u01B0\u1EDDng \u0111\u1EA1i h\u1ECDc m\u1EDF tp.hcm\\documents\\projeck\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD shop th\u1EDDi trang\\shopmaneger\\shopthoitrang\\myapp\\dal\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|solutionrelative:dal\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dto\\inputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|solutionrelative:dto\\inputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dto\\customerdtocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|solutionrelative:dto\\customerdtocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|c:\\users\\kuroba\\onedrive - tr\u01B0\u1EDDng \u0111\u1EA1i h\u1ECDc m\u1EDF tp.hcm\\documents\\projeck\\h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD shop th\u1EDDi trang\\shopmaneger\\shopthoitrang\\myapp\\dto\\outputinfordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\gui\\fmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|solutionrelative:gui\\fmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\gui\\fmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|solutionrelative:gui\\fmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dto\\groupcustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|solutionrelative:dto\\groupcustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB676F7-C8A5-4DF3-8F08-95FC58CC8843}|BLL\\BLL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\bll\\customerbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB676F7-C8A5-4DF3-8F08-95FC58CC8843}|BLL\\BLL.csproj|solutionrelative:bll\\customerbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dal\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|solutionrelative:dal\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dal\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|solutionrelative:dal\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dto\\outputinfordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|solutionrelative:dto\\outputinfordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,28 +51,12 @@
       "RelativeMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|solutionrelative:dto\\saleoutpuntdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dal\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|solutionrelative:dal\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dto\\objectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|solutionrelative:dto\\objectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dto\\inputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6B7B570-1097-43AF-99B6-08CB3ECB1DF2}|DTO\\DTO.csproj|solutionrelative:dto\\inputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dal\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|solutionrelative:dal\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4FB676F7-C8A5-4DF3-8F08-95FC58CC8843}|BLL\\BLL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\bll\\addusersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FB676F7-C8A5-4DF3-8F08-95FC58CC8843}|BLL\\BLL.csproj|solutionrelative:bll\\addusersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FB676F7-C8A5-4DF3-8F08-95FC58CC8843}|BLL\\BLL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\bll\\customerbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FB676F7-C8A5-4DF3-8F08-95FC58CC8843}|BLL\\BLL.csproj|solutionrelative:bll\\customerbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dal\\usersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,14 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dal\\basedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|solutionrelative:dal\\basedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dal\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|solutionrelative:dal\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dal\\addusersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|solutionrelative:dal\\addusersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E26BD51E-35E1-4471-BFAE-CE32B43D9416}|DAL\\DAL.csproj|C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,11 +126,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "AddUsersDAL.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\AddUsersDAL.cs",
               "RelativeDocumentMoniker": "DAL\\AddUsersDAL.cs",
@@ -135,20 +139,22 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-13T14:44:37.009Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "CustomerDAL.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\CustomerDAL.cs",
               "RelativeDocumentMoniker": "DAL\\CustomerDAL.cs",
               "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\CustomerDAL.cs",
               "RelativeToolTip": "DAL\\CustomerDAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T21:19:12.132Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -167,12 +173,21 @@
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InputDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\InputDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\InputDTO.cs",
+              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\InputDTO.cs",
+              "RelativeToolTip": "DTO\\InputDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T00:26:59.866Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CustomerDTOcs.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\CustomerDTOcs.cs",
               "RelativeDocumentMoniker": "DTO\\CustomerDTOcs.cs",
@@ -185,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "fManager.cs [Design]",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\fManager.cs",
               "RelativeDocumentMoniker": "GUI\\fManager.cs",
@@ -197,94 +212,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "fManager.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\fManager.cs",
               "RelativeDocumentMoniker": "GUI\\fManager.cs",
               "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\fManager.cs",
               "RelativeToolTip": "GUI\\fManager.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAiwD8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAUwGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T22:38:26.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OutputInforDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\OutputInforDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\OutputInforDTO.cs",
-              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\OutputInforDTO.cs",
-              "RelativeToolTip": "DTO\\OutputInforDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T00:27:04.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SaleOutpuntDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\SaleOutpuntDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\SaleOutpuntDTO.cs",
-              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\SaleOutpuntDTO.cs",
-              "RelativeToolTip": "DTO\\SaleOutpuntDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T00:27:05.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ObjectDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\ObjectDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\ObjectDTO.cs",
-              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\ObjectDTO.cs",
-              "RelativeToolTip": "DTO\\ObjectDTO.cs",
+              "Title": "GroupCustomerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\GroupCustomerDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\GroupCustomerDTO.cs",
+              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\GroupCustomerDTO.cs",
+              "RelativeToolTip": "DTO\\GroupCustomerDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T00:27:02.04Z"
+              "WhenOpened": "2025-04-20T06:53:07.4Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "InputDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\InputDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\InputDTO.cs",
-              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\InputDTO.cs",
-              "RelativeToolTip": "DTO\\InputDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T00:26:59.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DataProvider.cs",
-              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\DataProvider.cs",
-              "RelativeDocumentMoniker": "DAL\\DataProvider.cs",
-              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\DataProvider.cs",
-              "RelativeToolTip": "DAL\\DataProvider.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAwBYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T19:15:23.3Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddUsersBLL.cs",
-              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\BLL\\AddUsersBLL.cs",
-              "RelativeDocumentMoniker": "BLL\\AddUsersBLL.cs",
-              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\BLL\\AddUsersBLL.cs",
-              "RelativeToolTip": "BLL\\AddUsersBLL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T08:50:53.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "CustomerBLL.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\BLL\\CustomerBLL.cs",
               "RelativeDocumentMoniker": "BLL\\CustomerBLL.cs",
@@ -296,7 +249,83 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataProvider.cs",
+              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\DataProvider.cs",
+              "RelativeDocumentMoniker": "DAL\\DataProvider.cs",
+              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\DataProvider.cs",
+              "RelativeToolTip": "DAL\\DataProvider.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAIwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T19:15:23.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\Database.cs",
+              "RelativeDocumentMoniker": "DAL\\Database.cs",
+              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\Database.cs",
+              "RelativeToolTip": "DAL\\Database.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T18:13:19.46Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OutputInforDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\OutputInforDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\OutputInforDTO.cs",
+              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\OutputInforDTO.cs",
+              "RelativeToolTip": "DTO\\OutputInforDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T00:27:04.616Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "SaleOutpuntDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\SaleOutpuntDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\SaleOutpuntDTO.cs",
+              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\SaleOutpuntDTO.cs",
+              "RelativeToolTip": "DTO\\SaleOutpuntDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T00:27:05.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ObjectDTO.cs",
+              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\ObjectDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ObjectDTO.cs",
+              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DTO\\ObjectDTO.cs",
+              "RelativeToolTip": "DTO\\ObjectDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T00:27:02.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddUsersBLL.cs",
+              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\BLL\\AddUsersBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\AddUsersBLL.cs",
+              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\BLL\\AddUsersBLL.cs",
+              "RelativeToolTip": "BLL\\AddUsersBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T08:50:53.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "UsersDAL.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\UsersDAL.cs",
               "RelativeDocumentMoniker": "DAL\\UsersDAL.cs",
@@ -308,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "BaseDAL.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\BaseDAL.cs",
               "RelativeDocumentMoniker": "DAL\\BaseDAL.cs",
@@ -320,19 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Database.cs",
-              "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\Database.cs",
-              "RelativeDocumentMoniker": "DAL\\Database.cs",
-              "ToolTip": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\Database.cs",
-              "RelativeToolTip": "DAL\\Database.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T18:13:19.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\DAL\\Class1.cs",
               "RelativeDocumentMoniker": "DAL\\Class1.cs",
@@ -344,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "FormMains.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\FormMains.cs",
               "RelativeDocumentMoniker": "GUI\\FormMains.cs",
@@ -356,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UsersBLL.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\BLL\\UsersBLL.cs",
               "RelativeDocumentMoniker": "BLL\\UsersBLL.cs",
@@ -368,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "tets1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\tets1.cs",
               "RelativeDocumentMoniker": "GUI\\tets1.cs",
@@ -379,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "fManager.Designer.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\fManager.Designer.cs",
               "RelativeDocumentMoniker": "GUI\\fManager.Designer.cs",
@@ -392,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "fManager.resx",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\fManager.resx",
               "RelativeDocumentMoniker": "GUI\\fManager.resx",
@@ -404,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "FormMains.cs [Design]",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\FormMains.cs",
               "RelativeDocumentMoniker": "GUI\\FormMains.cs",
@@ -415,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "tets1.resx",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\tets1.resx",
               "RelativeDocumentMoniker": "GUI\\tets1.resx",
@@ -426,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "tets1.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\tets1.cs",
               "RelativeDocumentMoniker": "GUI\\tets1.cs",
@@ -438,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\Program.cs",
               "RelativeDocumentMoniker": "GUI\\Program.cs",
@@ -450,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "fAddUsersGUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\fAddUsersGUI.cs",
               "RelativeDocumentMoniker": "GUI\\fAddUsersGUI.cs",
@@ -461,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "fAddUsersGUI.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\fAddUsersGUI.cs",
               "RelativeDocumentMoniker": "GUI\\fAddUsersGUI.cs",
@@ -473,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "fAddUsersGUI.Designer.cs",
               "DocumentMoniker": "C:\\Users\\kuroba\\OneDrive - TR\u01AF\u1EDCNG \u0110\u1EA0I H\u1ECCC M\u1EDE TP.HCM\\Documents\\projeck\\H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD SHOP TH\u1EDCI TRANG\\ShopManeger\\ShopThoiTrang\\MyApp\\GUI\\fAddUsersGUI.Designer.cs",
               "RelativeDocumentMoniker": "GUI\\fAddUsersGUI.Designer.cs",
