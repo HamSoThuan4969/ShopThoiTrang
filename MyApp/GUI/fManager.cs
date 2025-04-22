@@ -6,6 +6,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +17,7 @@ namespace GUI
        
     {
         private CustomerBLL customerBLL= new CustomerBLL(); // tạo đối tượng BLL để gọi hàm lấy danh sách khách hàng
+        
 
         public fManager()
         {
@@ -28,46 +31,14 @@ namespace GUI
         {
             try
             {
-                List<CustomerDTO> customer = customerBLL.GetCustomerDALs(); // gọi hàm lấy danh sách khách hàng ở BLL
-                dataGridView_Customer.DataSource = customer; // gán danh sách khách hàng vào DataGridView
-                                                             // Thêm cột nút "Xem"
-                if (!dataGridView_Customer.Columns.Contains("Xem"))
-                {
-                    DataGridViewButtonColumn btnView = new DataGridViewButtonColumn();
-                    btnView.Name = "Xem";
-                    btnView.HeaderText = "Xem";
-                    btnView.Text = "Xem";
-                    btnView.UseColumnTextForButtonValue = true; // Hiển thị chữ "Xem" trên nút
-                    dataGridView_Customer.Columns.Add(btnView);
-                }
-
-                // Thêm cột nút "Sửa"
-                if (!dataGridView_Customer.Columns.Contains("Sửa"))
-                {
-                    DataGridViewButtonColumn btnEdit = new DataGridViewButtonColumn();
-                    btnEdit.Name = "Sửa";
-                    btnEdit.HeaderText = "Sửa";
-                    btnEdit.Text = "Sửa";
-                    btnEdit.UseColumnTextForButtonValue = true; // Hiển thị chữ "Sửa" trên nút
-                    dataGridView_Customer.Columns.Add(btnEdit);
-                }
-
-                // Thêm cột nút "Xóa"
-                if (!dataGridView_Customer.Columns.Contains("Xóa"))
-                {
-                    DataGridViewButtonColumn btnDelete = new DataGridViewButtonColumn();
-                    btnDelete.Name = "Xóa";
-                    btnDelete.HeaderText = "Xóa";
-                    btnDelete.Text = "Xóa";
-                    btnDelete.UseColumnTextForButtonValue = true; // Hiển thị chữ "Xóa" trên nút
-                    dataGridView_Customer.Columns.Add(btnDelete);
-                }
+                List<CustomerDTO> customers = customerBLL.GetCustomerDALs();
+                dataGridView_Customer.DataSource = customers;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi: " + ex.Message); // thông báo lỗi
+                MessageBox.Show($"Lỗi khi tải danh sách khách hàng: {ex.Message}");
             }
-
+           
         }
 
         private void btCustomer_Click(object sender, EventArgs e)
@@ -102,8 +73,34 @@ namespace GUI
 
         private void Add_Customer_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Thu thập dữ liệu từ TextBox
+                CustomerDTO customer = new CustomerDTO
+                {
+                    DisplayName = tbDisplayName.Text.Trim(),
+                    Address = tbAddress.Text.Trim(),
+                    Phone = tbPhone.Text.Trim(),
+                    Email = tbEmail.Text.Trim(),
+                    MoreInfor = tbMoreInfor.Text.Trim(),
+                    IdGroupCustomer = tbIdGroupCustomer.Text.Trim(),
+                    DateContract = DateTime.Now
+                };
 
-        }
+                // Gọi BLL để thêm khách hàng
+                customerBLL.AddCustomer(customer);
+
+                // Thông báo thành công và làm mới danh sách
+                MessageBox.Show("Thêm khách hàng thành công!");
+                LoadCustomerList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi: {ex.Message}");
+            }
+        }   
+    
     }
     
 }
+

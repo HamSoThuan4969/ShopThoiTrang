@@ -73,17 +73,26 @@ namespace DAL
         // hàm thực thi lệnh Sql trả về số row bị ảnh hưởng qua các (INSERT, UPDATE, DELETE)
         public int ExecuteNonQuery(string query, object[] parameter = null)
         {
-            int rowAffected;
-            using (SqlConnection connection = new SqlConnection(conn))
+            try
             {
-                connection.Open();
-                using (SqlCommand cmd = connection.CreateCommand())
+                int rowAffected;
+                using (SqlConnection connection = new SqlConnection(conn))
                 {
-                    AddParameter(cmd, query, parameter); // thêm các tham số vào lệnh cmd
-                    rowAffected = cmd.ExecuteNonQuery(); // thực thi lệnh cmd và trả về số dòng bị ảnh hưởng
+                    connection.Open();
+                    using (SqlCommand cmd = connection.CreateCommand())
+                    {
+                        cmd.CommandText = query; // Thiết lập câu lệnh SQL
+                        AddParameter(cmd, query, parameter); // Thêm tham số
+                        rowAffected = cmd.ExecuteNonQuery(); // Thực thi lệnh SQL
+                    }
                 }
+                return rowAffected;
             }
-            return rowAffected;
+            catch (Exception ex)
+            {
+                // Log lỗi chi tiết
+                throw new Exception($"Lỗi trong ExecuteNonQuery: {ex.Message}, câu lệnh: {query}", ex);
+            }
         }
         // hàm thực thi lệnh Sql trả về 1 giá trị duy nhất - thông thường id  (dùng select, inset, delete)
         public object ExecuteSalar(string query, object[] parameter = null)
@@ -118,23 +127,27 @@ namespace DAL
         // truyền giá trị vào các tham số của lệnh SqlCommand
         public void AddParameter(SqlCommand cmd, string query, object[] parameter = null)
         {
-
             if (parameter != null)
             {
-                string[] listPara = query.Split(' ');   // tách chuỗi query thành mảng các từ - split khoảng trắng
+                // Duyệt qua từng từ trong câu lệnh SQL
+                string[] listPara = query.Split(new char[] { ' ', ',', '(', ')', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
                 int i = 0;
+
                 foreach (string item in listPara)
                 {
-                    if (item.StartsWith("@")) // kiểm tra chuỗi có ký tự bắt đầu là  @  => nó chưa Para
+                    // Kiểm tra nếu từ bắt đầu bằng '@' (biến tham số)
+                    if (item.StartsWith("@"))
                     {
-                        cmd.Parameters.AddWithValue(item, parameter[i]);
+                        
+
+                        
+                        cmd.Parameters.AddWithValue(item, parameter[i] ?? DBNull.Value);
                         i++;
                     }
                 }
-
-            }       
+            }
         }
 
-        
+
     }
 }

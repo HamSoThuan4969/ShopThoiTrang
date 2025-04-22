@@ -48,7 +48,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.lb_DisplayName = new System.Windows.Forms.Label();
             this.lbGroup_Customer = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbIdGroupCustomer = new System.Windows.Forms.TextBox();
             this.lb_Phone = new System.Windows.Forms.Label();
             this.tbPhone = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -162,6 +162,7 @@
             this.Add_Customer.TabIndex = 4;
             this.Add_Customer.Text = "Add";
             this.Add_Customer.UseVisualStyleBackColor = false;
+            this.Add_Customer.Click += new System.EventHandler(this.Add_Customer_Click);
             // 
             // btDelete
             // 
@@ -236,21 +237,21 @@
             this.lbGroup_Customer.TabIndex = 12;
             this.lbGroup_Customer.Text = "Group_Customer";
             // 
-            // textBox1
+            // tbIdGroupCustomer
             // 
-            this.textBox1.Location = new System.Drawing.Point(278, 303);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(296, 26);
-            this.textBox1.TabIndex = 11;
+            this.tbIdGroupCustomer.Location = new System.Drawing.Point(278, 303);
+            this.tbIdGroupCustomer.Name = "tbIdGroupCustomer";
+            this.tbIdGroupCustomer.Size = new System.Drawing.Size(296, 26);
+            this.tbIdGroupCustomer.TabIndex = 11;
             // 
             // lb_Phone
             // 
             this.lb_Phone.AutoSize = true;
             this.lb_Phone.Location = new System.Drawing.Point(140, 368);
             this.lb_Phone.Name = "lb_Phone";
-            this.lb_Phone.Size = new System.Drawing.Size(51, 20);
+            this.lb_Phone.Size = new System.Drawing.Size(55, 20);
             this.lb_Phone.TabIndex = 14;
-            this.lb_Phone.Text = "Name";
+            this.lb_Phone.Text = "Phone";
             // 
             // tbPhone
             // 
@@ -264,9 +265,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(607, 258);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
+            this.label3.Size = new System.Drawing.Size(68, 20);
             this.label3.TabIndex = 16;
-            this.label3.Text = "Name";
+            this.label3.Text = "Address";
             // 
             // tbAddress
             // 
@@ -280,9 +281,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(607, 309);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
+            this.label4.Size = new System.Drawing.Size(48, 20);
             this.label4.TabIndex = 18;
-            this.label4.Text = "Name";
+            this.label4.Text = "Email";
             // 
             // tbEmail
             // 
@@ -294,11 +295,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(607, 371);
+            this.label5.Location = new System.Drawing.Point(592, 371);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 20);
+            this.label5.Size = new System.Drawing.Size(78, 20);
             this.label5.TabIndex = 20;
-            this.label5.Text = "Name";
+            this.label5.Text = "MoreInfor";
             // 
             // tbMoreInfor
             // 
@@ -321,7 +322,7 @@
             this.Controls.Add(this.lb_Phone);
             this.Controls.Add(this.tbPhone);
             this.Controls.Add(this.lbGroup_Customer);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbIdGroupCustomer);
             this.Controls.Add(this.lb_DisplayName);
             this.Controls.Add(this.tbDisplayName);
             this.Controls.Add(this.btUpdate);
@@ -363,7 +364,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label lb_DisplayName;
         private System.Windows.Forms.Label lbGroup_Customer;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbIdGroupCustomer;
         private System.Windows.Forms.Label lb_Phone;
         private System.Windows.Forms.TextBox tbPhone;
         private System.Windows.Forms.Label label3;
