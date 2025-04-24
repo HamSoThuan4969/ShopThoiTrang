@@ -104,6 +104,11 @@ namespace GUI
         {
 
         }
+
+        private void tvFind_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
