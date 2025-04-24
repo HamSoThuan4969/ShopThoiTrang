@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using DTO;
 using System.Security.Principal;
 using BLL;
+using System;
 namespace GUI
 {
     public partial class Form1 : MaterialForm
@@ -104,10 +105,18 @@ namespace GUI
 
         private void Test_Click(object sender, System.EventArgs e)
         {
-            fManager f = new fManager();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            try
+            {
+                fManager f = new fManager();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi mở fManager: {ex.Message}");
+                this.Show(); // Hiển thị lại Form chính nếu có lỗi
+            }
         }
     }
 }
