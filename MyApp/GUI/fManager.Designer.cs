@@ -65,7 +65,7 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.menuStrip1.Font = new System.Drawing.Font("Nueva Std", 9F, System.Drawing.FontStyle.Bold);
+            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -74,14 +74,14 @@
             this.khoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(110, 556);
+            this.menuStrip1.Size = new System.Drawing.Size(186, 556);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.homeToolStripMenuItem.Text = "Home";
             // 
             // kháchHàngToolStripMenuItem
@@ -90,25 +90,25 @@
             this.dataToolStripMenuItem,
             this.groupToolStripMenuItem});
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
+            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.kháchHàngToolStripMenuItem.Text = "Customer";
             // 
             // dataToolStripMenuItem
             // 
             this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
-            this.dataToolStripMenuItem.Size = new System.Drawing.Size(157, 34);
+            this.dataToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.dataToolStripMenuItem.Text = "Data";
             // 
             // groupToolStripMenuItem
             // 
             this.groupToolStripMenuItem.Name = "groupToolStripMenuItem";
-            this.groupToolStripMenuItem.Size = new System.Drawing.Size(157, 34);
+            this.groupToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.groupToolStripMenuItem.Text = "Group";
             // 
             // khoToolStripMenuItem
             // 
             this.khoToolStripMenuItem.Name = "khoToolStripMenuItem";
-            this.khoToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
+            this.khoToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.khoToolStripMenuItem.Text = "Kho ";
             // 
             // dataGridView_Customer
@@ -132,14 +132,14 @@
             this.dataGridView_Customer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView_Customer.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView_Customer.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView_Customer.Location = new System.Drawing.Point(110, 0);
+            this.dataGridView_Customer.Location = new System.Drawing.Point(186, 0);
             this.dataGridView_Customer.Margin = new System.Windows.Forms.Padding(4, 3, 5, 3);
             this.dataGridView_Customer.Name = "dataGridView_Customer";
             this.dataGridView_Customer.RowHeadersVisible = false;
             this.dataGridView_Customer.RowHeadersWidth = 62;
             this.dataGridView_Customer.RowTemplate.Height = 28;
             this.dataGridView_Customer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_Customer.Size = new System.Drawing.Size(1353, 228);
+            this.dataGridView_Customer.Size = new System.Drawing.Size(1277, 228);
             this.dataGridView_Customer.TabIndex = 2;
             // 
             // tvFind

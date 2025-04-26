@@ -28,43 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btHaveAccount = new System.Windows.Forms.Button();
             this.fSingin = new System.Windows.Forms.Button();
-            this.tbShowPassWord = new MaterialSkin.Controls.MaterialLabel();
-            this.tbPassword = new System.Windows.Forms.TextBox();
-            this.tbUserName = new System.Windows.Forms.TextBox();
-            this.cbShowPassword = new MaterialSkin.Controls.MaterialCheckBox();
-            this.lbPassword = new MaterialSkin.Controls.MaterialLabel();
-            this.lbUserName = new MaterialSkin.Controls.MaterialLabel();
-            this.lbRegister = new MaterialSkin.Controls.MaterialLabel();
-            this.lbX = new MaterialSkin.Controls.MaterialLabel();
-            this.tbConfirmPassword = new System.Windows.Forms.TextBox();
-            this.lbConfirmPassword = new MaterialSkin.Controls.MaterialLabel();
             this.btRegister = new System.Windows.Forms.Button();
+            this.lbConfirmPassword = new MaterialSkin.Controls.MaterialLabel();
+            this.tbConfirmPassword = new System.Windows.Forms.TextBox();
+            this.lbX = new MaterialSkin.Controls.MaterialLabel();
+            this.lbRegister = new MaterialSkin.Controls.MaterialLabel();
+            this.lbUserName = new MaterialSkin.Controls.MaterialLabel();
+            this.lbPassword = new MaterialSkin.Controls.MaterialLabel();
+            this.cbShowPassword = new MaterialSkin.Controls.MaterialCheckBox();
+            this.tbUserName = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.tbShowPassWord = new MaterialSkin.Controls.MaterialLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
-            this.panel1.Controls.Add(this.btHaveAccount);
-            this.panel1.Controls.Add(this.fSingin);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(404, 737);
-            this.panel1.TabIndex = 9;
             // 
             // btHaveAccount
             // 
             this.btHaveAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
             this.btHaveAccount.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
             this.btHaveAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btHaveAccount.Font = new System.Drawing.Font("Magneto", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btHaveAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btHaveAccount.ForeColor = System.Drawing.Color.Black;
             this.btHaveAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btHaveAccount.Location = new System.Drawing.Point(61, 519);
+            this.btHaveAccount.Location = new System.Drawing.Point(61, 507);
             this.btHaveAccount.Name = "btHaveAccount";
             this.btHaveAccount.Size = new System.Drawing.Size(277, 52);
             this.btHaveAccount.TabIndex = 1;
@@ -83,33 +72,91 @@
             this.fSingin.UseVisualStyleBackColor = false;
             this.fSingin.Click += new System.EventHandler(this.fSingin_Click);
             // 
-            // tbShowPassWord
+            // btRegister
             // 
-            this.tbShowPassWord.AutoSize = true;
-            this.tbShowPassWord.Depth = 0;
-            this.tbShowPassWord.Font = new System.Drawing.Font("Roboto", 11F);
-            this.tbShowPassWord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbShowPassWord.Location = new System.Drawing.Point(493, 519);
-            this.tbShowPassWord.MouseState = MaterialSkin.MouseState.HOVER;
-            this.tbShowPassWord.Name = "tbShowPassWord";
-            this.tbShowPassWord.Size = new System.Drawing.Size(169, 27);
-            this.tbShowPassWord.TabIndex = 17;
-            this.tbShowPassWord.Text = "Show Password";
+            this.btRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            this.btRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btRegister.Location = new System.Drawing.Point(452, 588);
+            this.btRegister.Name = "btRegister";
+            this.btRegister.Size = new System.Drawing.Size(158, 41);
+            this.btRegister.TabIndex = 20;
+            this.btRegister.Text = "REGISTER";
+            this.btRegister.UseVisualStyleBackColor = false;
             // 
-            // tbPassword
+            // lbConfirmPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(441, 369);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.PasswordChar = '*';
-            this.tbPassword.Size = new System.Drawing.Size(291, 26);
-            this.tbPassword.TabIndex = 16;
+            this.lbConfirmPassword.AutoSize = true;
+            this.lbConfirmPassword.Depth = 0;
+            this.lbConfirmPassword.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbConfirmPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbConfirmPassword.Location = new System.Drawing.Point(447, 418);
+            this.lbConfirmPassword.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbConfirmPassword.Name = "lbConfirmPassword";
+            this.lbConfirmPassword.Size = new System.Drawing.Size(192, 27);
+            this.lbConfirmPassword.TabIndex = 18;
+            this.lbConfirmPassword.Text = "Confirm Password";
             // 
-            // tbUserName
+            // tbConfirmPassword
             // 
-            this.tbUserName.Location = new System.Drawing.Point(441, 276);
-            this.tbUserName.Name = "tbUserName";
-            this.tbUserName.Size = new System.Drawing.Size(291, 26);
-            this.tbUserName.TabIndex = 15;
+            this.tbConfirmPassword.Location = new System.Drawing.Point(441, 464);
+            this.tbConfirmPassword.Name = "tbConfirmPassword";
+            this.tbConfirmPassword.PasswordChar = '*';
+            this.tbConfirmPassword.Size = new System.Drawing.Size(291, 26);
+            this.tbConfirmPassword.TabIndex = 19;
+            // 
+            // lbX
+            // 
+            this.lbX.AutoSize = true;
+            this.lbX.Depth = 0;
+            this.lbX.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbX.Location = new System.Drawing.Point(744, 0);
+            this.lbX.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbX.Name = "lbX";
+            this.lbX.Size = new System.Drawing.Size(26, 27);
+            this.lbX.TabIndex = 10;
+            this.lbX.Text = "X";
+            this.lbX.Click += new System.EventHandler(this.lbX_Click);
+            // 
+            // lbRegister
+            // 
+            this.lbRegister.AutoSize = true;
+            this.lbRegister.Depth = 0;
+            this.lbRegister.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbRegister.Location = new System.Drawing.Point(436, 177);
+            this.lbRegister.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbRegister.Name = "lbRegister";
+            this.lbRegister.Size = new System.Drawing.Size(113, 27);
+            this.lbRegister.TabIndex = 11;
+            this.lbRegister.Text = "REGISTER";
+            this.lbRegister.Click += new System.EventHandler(this.lbSignIn_Click);
+            // 
+            // lbUserName
+            // 
+            this.lbUserName.AutoSize = true;
+            this.lbUserName.Depth = 0;
+            this.lbUserName.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbUserName.Location = new System.Drawing.Point(436, 235);
+            this.lbUserName.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbUserName.Name = "lbUserName";
+            this.lbUserName.Size = new System.Drawing.Size(120, 27);
+            this.lbUserName.TabIndex = 12;
+            this.lbUserName.Text = "User Name";
+            // 
+            // lbPassword
+            // 
+            this.lbPassword.AutoSize = true;
+            this.lbPassword.Depth = 0;
+            this.lbPassword.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbPassword.Location = new System.Drawing.Point(447, 318);
+            this.lbPassword.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbPassword.Name = "lbPassword";
+            this.lbPassword.Size = new System.Drawing.Size(109, 27);
+            this.lbPassword.TabIndex = 13;
+            this.lbPassword.Text = "Password";
             // 
             // cbShowPassword
             // 
@@ -126,91 +173,44 @@
             this.cbShowPassword.TabIndex = 14;
             this.cbShowPassword.UseVisualStyleBackColor = true;
             // 
-            // lbPassword
+            // tbUserName
             // 
-            this.lbPassword.AutoSize = true;
-            this.lbPassword.Depth = 0;
-            this.lbPassword.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbPassword.Location = new System.Drawing.Point(447, 318);
-            this.lbPassword.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(109, 27);
-            this.lbPassword.TabIndex = 13;
-            this.lbPassword.Text = "Password";
+            this.tbUserName.Location = new System.Drawing.Point(441, 276);
+            this.tbUserName.Name = "tbUserName";
+            this.tbUserName.Size = new System.Drawing.Size(291, 26);
+            this.tbUserName.TabIndex = 15;
             // 
-            // lbUserName
+            // tbPassword
             // 
-            this.lbUserName.AutoSize = true;
-            this.lbUserName.Depth = 0;
-            this.lbUserName.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lbUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbUserName.Location = new System.Drawing.Point(436, 235);
-            this.lbUserName.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lbUserName.Name = "lbUserName";
-            this.lbUserName.Size = new System.Drawing.Size(120, 27);
-            this.lbUserName.TabIndex = 12;
-            this.lbUserName.Text = "User Name";
+            this.tbPassword.Location = new System.Drawing.Point(441, 369);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '*';
+            this.tbPassword.Size = new System.Drawing.Size(291, 26);
+            this.tbPassword.TabIndex = 16;
             // 
-            // lbRegister
+            // tbShowPassWord
             // 
-            this.lbRegister.AutoSize = true;
-            this.lbRegister.Depth = 0;
-            this.lbRegister.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lbRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbRegister.Location = new System.Drawing.Point(436, 177);
-            this.lbRegister.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lbRegister.Name = "lbRegister";
-            this.lbRegister.Size = new System.Drawing.Size(113, 27);
-            this.lbRegister.TabIndex = 11;
-            this.lbRegister.Text = "REGISTER";
-            this.lbRegister.Click += new System.EventHandler(this.lbSignIn_Click);
+            this.tbShowPassWord.AutoSize = true;
+            this.tbShowPassWord.Depth = 0;
+            this.tbShowPassWord.Font = new System.Drawing.Font("Roboto", 11F);
+            this.tbShowPassWord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.tbShowPassWord.Location = new System.Drawing.Point(493, 519);
+            this.tbShowPassWord.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbShowPassWord.Name = "tbShowPassWord";
+            this.tbShowPassWord.Size = new System.Drawing.Size(169, 27);
+            this.tbShowPassWord.TabIndex = 17;
+            this.tbShowPassWord.Text = "Show Password";
             // 
-            // lbX
+            // panel1
             // 
-            this.lbX.AutoSize = true;
-            this.lbX.Depth = 0;
-            this.lbX.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lbX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbX.Location = new System.Drawing.Point(744, 0);
-            this.lbX.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lbX.Name = "lbX";
-            this.lbX.Size = new System.Drawing.Size(26, 27);
-            this.lbX.TabIndex = 10;
-            this.lbX.Text = "X";
-            this.lbX.Click += new System.EventHandler(this.lbX_Click);
-            // 
-            // tbConfirmPassword
-            // 
-            this.tbConfirmPassword.Location = new System.Drawing.Point(441, 464);
-            this.tbConfirmPassword.Name = "tbConfirmPassword";
-            this.tbConfirmPassword.PasswordChar = '*';
-            this.tbConfirmPassword.Size = new System.Drawing.Size(291, 26);
-            this.tbConfirmPassword.TabIndex = 19;
-            // 
-            // lbConfirmPassword
-            // 
-            this.lbConfirmPassword.AutoSize = true;
-            this.lbConfirmPassword.Depth = 0;
-            this.lbConfirmPassword.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lbConfirmPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbConfirmPassword.Location = new System.Drawing.Point(447, 418);
-            this.lbConfirmPassword.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lbConfirmPassword.Name = "lbConfirmPassword";
-            this.lbConfirmPassword.Size = new System.Drawing.Size(192, 27);
-            this.lbConfirmPassword.TabIndex = 18;
-            this.lbConfirmPassword.Text = "Confirm Password";
-            // 
-            // btRegister
-            // 
-            this.btRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
-            this.btRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btRegister.Location = new System.Drawing.Point(452, 588);
-            this.btRegister.Name = "btRegister";
-            this.btRegister.Size = new System.Drawing.Size(158, 41);
-            this.btRegister.TabIndex = 20;
-            this.btRegister.Text = "REGISTER";
-            this.btRegister.UseVisualStyleBackColor = false;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            this.panel1.Controls.Add(this.btHaveAccount);
+            this.panel1.Controls.Add(this.fSingin);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(404, 737);
+            this.panel1.TabIndex = 9;
             // 
             // fRegister
             // 
@@ -242,19 +242,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btHaveAccount;
         private System.Windows.Forms.Button fSingin;
-        private MaterialSkin.Controls.MaterialLabel tbShowPassWord;
-        private System.Windows.Forms.TextBox tbPassword;
-        private System.Windows.Forms.TextBox tbUserName;
-        private MaterialSkin.Controls.MaterialCheckBox cbShowPassword;
-        private MaterialSkin.Controls.MaterialLabel lbPassword;
-        private MaterialSkin.Controls.MaterialLabel lbUserName;
-        private MaterialSkin.Controls.MaterialLabel lbRegister;
-        private MaterialSkin.Controls.MaterialLabel lbX;
-        private System.Windows.Forms.TextBox tbConfirmPassword;
-        private MaterialSkin.Controls.MaterialLabel lbConfirmPassword;
         private System.Windows.Forms.Button btRegister;
+        private MaterialSkin.Controls.MaterialLabel lbConfirmPassword;
+        private System.Windows.Forms.TextBox tbConfirmPassword;
+        private MaterialSkin.Controls.MaterialLabel lbX;
+        private MaterialSkin.Controls.MaterialLabel lbRegister;
+        private MaterialSkin.Controls.MaterialLabel lbUserName;
+        private MaterialSkin.Controls.MaterialLabel lbPassword;
+        private MaterialSkin.Controls.MaterialCheckBox cbShowPassword;
+        private System.Windows.Forms.TextBox tbUserName;
+        private System.Windows.Forms.TextBox tbPassword;
+        private MaterialSkin.Controls.MaterialLabel tbShowPassWord;
+        private System.Windows.Forms.Panel panel1;
     }
 }
