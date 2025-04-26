@@ -20,3 +20,5 @@ C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fAddUserGUI.resources
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fManager.resources
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\Test1.resources
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fCustomer.resources
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fEmployee.resources

@@ -31,12 +31,31 @@ namespace BLL
                     throw new Exception("Không thể phân tích số của Id");
                 }
                 // tăng số của Id và tạo ra Id mới
-                int newNumber = currentNumber + 1;
+                int newNumber = currentNumber + 1;  
                 return $"{prefix}{newNumber:D3}";
             }catch(Exception ex)
             {
                 throw new Exception($"Lỗi khi tự động sinh Id cho bảng {tableName}: {ex.Message}");
             }
         }
+        public virtual void  DeleteByIds(string tableName, string columnName, List<string> ids)
+        {
+            if(ids== null || ids.Count == 0)
+            {
+                throw new ArgumentException("Danh sách Id không được null hoặc rỗng");
+            }
+            try
+            {
+                baseDAL.DeleteByIds(tableName, columnName, ids);
+
+            }
+            catch(Exception ex)
+            {
+                throw new Exception($"Lỗi khi xóa Id trong bảng  {tableName}: {ex.Message} Tầng baseBLL");
+            }
+        }
+        // phương thức cập nhật dữ liệu - Update
+        
+       
     }
 }

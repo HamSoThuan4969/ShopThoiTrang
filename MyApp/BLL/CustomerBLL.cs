@@ -42,9 +42,23 @@ namespace BLL
             }
         }
 
-      
-        
-       
+
+        // XÓa khách hàng nè 
+        public void RemoveCustomer(List<string> ids)
+        {
+            try
+            {
+                // Gọi hàm trừ bassBLL - Xóa
+                DeleteByIds("Customer", "Id", ids);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Lỗi khi xóa khách hàng ở CustomerBLL: {ex.Message}");
+            }
+
+
+
+        }
 
     }
 }

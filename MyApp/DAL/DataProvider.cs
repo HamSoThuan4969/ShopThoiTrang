@@ -86,6 +86,7 @@ namespace DAL
                         rowAffected = cmd.ExecuteNonQuery(); // Thực thi lệnh SQL
                     }
                 }
+                Console.WriteLine($"Số dòng bị ảnh hưởng: {rowAffected}");
                 return rowAffected;
             }
             catch (Exception ex)

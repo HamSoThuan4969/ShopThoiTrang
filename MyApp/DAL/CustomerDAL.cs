@@ -41,6 +41,11 @@ namespace DAL
             };
             dataProvider.ExecuteNonQuery(query, parameters);
         }
+        // xóa thông tin khách hàng 
+        public int DeleteCustomer(List<string> ids)
+        {
+            return DeleteByIds("Customer", "Id", ids);
+        }
        
     }
 }
