@@ -95,6 +95,24 @@ namespace DAL
                 throw new Exception($"Lỗi trong ExecuteNonQuery: {ex.Message}, câu lệnh: {query}", ex);
             }
         }
+
+
+        public int ExecuteNonQuery(SqlCommand command)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(conn))
+                {
+                    command.Connection = connection;// thiết lập kết nối cho lệnh cmd
+                    connection.Open(); // mở kết nối
+                    return command.ExecuteNonQuery(); // thực thi lệnh cmd và trả về số dòng bị ảnh hưởng
+                }
+            }catch(Exception ex)
+            {
+                // Log lỗi chi tiết
+                throw new Exception($"Lỗi trong ExecuteNonQuery(SqlCommand): {ex.Message}", ex);
+            }
+        }
         // hàm thực thi lệnh Sql trả về 1 giá trị duy nhất - thông thường id  (dùng select, inset, delete)
         public object ExecuteSalar(string query, object[] parameter = null)
         {

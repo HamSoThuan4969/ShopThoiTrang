@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTO;
+using System.Security.Policy;
 
 namespace BLL
 {
@@ -58,6 +59,15 @@ namespace BLL
 
 
 
+        }
+        public int UpdateCustomerList(List<CustomerDTO> customers)
+        {
+            if (customers == null || customers.Count == 0)
+            {
+                throw new ArgumentException("Danh sách khách hàng không được để trống.");
+            }
+
+            return customerDAL.UpdateCustomers(customers);
         }
 
     }

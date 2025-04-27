@@ -26,6 +26,7 @@
                 AddCheckboxColumn(); // Thêm cột checkbox vào DataGridView
                 // Đăng ký sự kiện CellClick cho DataGridView
             dataGridView_Customer.CellClick += dataGridView_Customer_CellClick;
+            btUpdate.Click += btUpdate_Click;
 
 
 
@@ -170,6 +171,8 @@
                 DataGridViewRow selectedRow = dataGridView_Customer.Rows[e.RowIndex];
 
                 // Hiển thị dữ liệu từ dòng đã chọn vào các TextBox
+                tbId.Text = selectedRow.Cells["Id"].Value?.ToString();
+                tbIdUserRole.Text = selectedRow.Cells["IdUserRole"].Value?.ToString();
                 tbDisplayName.Text = selectedRow.Cells["DisplayName"].Value?.ToString();
                 tbIdGroupCustomer.Text = selectedRow.Cells["IdGroupCustomer"].Value?.ToString();
                 tbEmail.Text = selectedRow.Cells["Email"].Value?.ToString();
@@ -188,25 +191,70 @@
         {
             try
             {
+                // thu thấp dữ liệu ở các textbox
                 CustomerDTO customer = new CustomerDTO
                 {
-                    Id = tbId.Text, // ID không thay đổi
+                    Id = tbId.Text.Trim(),
                     DisplayName = tbDisplayName.Text.Trim(),
                     Address = tbAddress.Text.Trim(),
                     Phone = tbPhone.Text.Trim(),
                     Email = tbEmail.Text.Trim(),
                     MoreInfor = tbMoreInfor.Text.Trim(),
                     IdGroupCustomer = tbIdGroupCustomer.Text.Trim(),
-                    DateContract = DateTime.Now // Giả sử ngày hợp đồng sẽ được cập nhật
+                    DateContract = DateTime.Now, // Giả sử ngày hợp đồng sẽ được cập nhật
+                    IdUserRole = int.Parse(tbIdUserRole.Text.Trim()) // IdUserRole không thay đổi
                 };
                 customerBLL.UpdateCustomerList(new List<CustomerDTO> { customer });
-
                 MessageBox.Show("Cập nhật khách hàng thành công!");
                 LoadCustomerList();
             }
-            catch(Exception ex)    
+            catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi khi cập nhật khách hàng GUI: {ex.Message}");
+            }
+        }
+
+
+        private void btClear_Click_1(object sender, EventArgs e)
+        {
+            // Làm trống tất cả các TextBox
+            tbId.Text = "";
+            tbIdUserRole.Text = "";
+            tbDisplayName.Text = "";
+            tbIdGroupCustomer.Text = "";
+            tbEmail.Text = "";
+            tbAddress.Text = "";
+            tbPhone.Text = "";
+            tbMoreInfor.Text = "";
+        }
+
+        private void btExportExcel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Gọi BLL để lấy toàn bộ dữ liệu khách hàng
+                List<CustomerDTO> customers = customerBLL.GetCustomerDALs();
+
+                // Hiển thị hộp thoại lưu file
+                SaveFileDialog saveFileDialog = new SaveFileDialog
+                {
+                    Filter = "Excel Files|*.xlsx",
+                    Title = "Lưu file Excel",
+                    FileName = "DanhSachKhachHang.xlsx"
+                };
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Gọi lớp ExcelExporter để xuất dữ liệu
+                    ExcelExporter exporter = new ExcelExporter();
+                    exporter.ExportToExcel(customers, saveFileDialog.FileName, "Customers");
+
+                    MessageBox.Show("Xuất dữ liệu ra file Excel thành công!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi xuất dữ liệu ra Excel: {ex.Message}");
             }
         }
     }   

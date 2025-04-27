@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,15 +66,19 @@
             this.lbIdGroupCustomer = new System.Windows.Forms.Label();
             this.tbIdGroupCustomer = new System.Windows.Forms.TextBox();
             this.btUpdate = new System.Windows.Forms.Button();
-            this.btClean = new System.Windows.Forms.Button();
+            this.btClear = new System.Windows.Forms.Button();
             this.pnInfor_Customer = new System.Windows.Forms.Panel();
-            this.lbId = new System.Windows.Forms.Label();
-            this.tbId = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.tbIdUserRole = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbId = new System.Windows.Forms.TextBox();
+            this.lbId = new System.Windows.Forms.Label();
+            this.btExportExcel = new System.Windows.Forms.Button();
+            this.materialContextMenuStrip1 = new MaterialSkin.Controls.MaterialContextMenuStrip();
+            this.eventLog1 = new System.Diagnostics.EventLog();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Customer)).BeginInit();
             this.pnInfor_Customer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -117,13 +121,13 @@
             // dataToolStripMenuItem
             // 
             this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
-            this.dataToolStripMenuItem.Size = new System.Drawing.Size(151, 34);
+            this.dataToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.dataToolStripMenuItem.Text = "Data";
             // 
             // groupToolStripMenuItem
             // 
             this.groupToolStripMenuItem.Name = "groupToolStripMenuItem";
-            this.groupToolStripMenuItem.Size = new System.Drawing.Size(151, 34);
+            this.groupToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.groupToolStripMenuItem.Text = "Group";
             // 
             // khoToolStripMenuItem
@@ -214,13 +218,13 @@
             // mặtHàngToolStripMenuItem
             // 
             this.mặtHàngToolStripMenuItem.Name = "mặtHàngToolStripMenuItem";
-            this.mặtHàngToolStripMenuItem.Size = new System.Drawing.Size(181, 34);
+            this.mặtHàngToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.mặtHàngToolStripMenuItem.Text = "Mặt hàng";
             // 
             // doanhThuToolStripMenuItem
             // 
             this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
-            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(181, 34);
+            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.doanhThuToolStripMenuItem.Text = "Doanh thu";
             // 
             // dataGridView_Customer
@@ -228,20 +232,20 @@
             this.dataGridView_Customer.AllowDrop = true;
             this.dataGridView_Customer.AllowUserToDeleteRows = false;
             this.dataGridView_Customer.AllowUserToResizeColumns = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.dataGridView_Customer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.dataGridView_Customer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView_Customer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_Customer.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView_Customer.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridView_Customer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Customer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Customer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView_Customer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Customer.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView_Customer.Location = new System.Drawing.Point(214, 128);
@@ -259,7 +263,7 @@
             // 
             this.tvFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)), true);
             this.tvFind.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.tvFind.Location = new System.Drawing.Point(690, 34);
+            this.tvFind.Location = new System.Drawing.Point(781, 33);
             this.tvFind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tvFind.Name = "tvFind";
             this.tvFind.Size = new System.Drawing.Size(229, 26);
@@ -405,17 +409,18 @@
             this.btUpdate.UseVisualStyleBackColor = false;
             this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
             // 
-            // btClean
+            // btClear
             // 
-            this.btClean.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btClean.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btClean.Location = new System.Drawing.Point(506, 12);
-            this.btClean.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btClean.Name = "btClean";
-            this.btClean.Size = new System.Drawing.Size(82, 48);
-            this.btClean.TabIndex = 19;
-            this.btClean.Text = "Clean";
-            this.btClean.UseVisualStyleBackColor = false;
+            this.btClear.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btClear.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btClear.Location = new System.Drawing.Point(506, 12);
+            this.btClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btClear.Name = "btClear";
+            this.btClear.Size = new System.Drawing.Size(82, 48);
+            this.btClear.TabIndex = 19;
+            this.btClear.Text = "Clear";
+            this.btClear.UseVisualStyleBackColor = false;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click_1);
             // 
             // pnInfor_Customer
             // 
@@ -441,21 +446,14 @@
             this.pnInfor_Customer.Size = new System.Drawing.Size(409, 541);
             this.pnInfor_Customer.TabIndex = 20;
             // 
-            // lbId
+            // tbIdUserRole
             // 
-            this.lbId.AutoSize = true;
-            this.lbId.Location = new System.Drawing.Point(21, 152);
-            this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(23, 20);
-            this.lbId.TabIndex = 18;
-            this.lbId.Text = "Id";
-            // 
-            // tbId
-            // 
-            this.tbId.Location = new System.Drawing.Point(118, 152);
-            this.tbId.Name = "tbId";
-            this.tbId.Size = new System.Drawing.Size(100, 26);
-            this.tbId.TabIndex = 19;
+            this.tbIdUserRole.Location = new System.Drawing.Point(122, 195);
+            this.tbIdUserRole.Name = "tbIdUserRole";
+            this.tbIdUserRole.ReadOnly = true;
+            this.tbIdUserRole.Size = new System.Drawing.Size(100, 26);
+            this.tbIdUserRole.TabIndex = 21;
+            this.tbIdUserRole.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label6
             // 
@@ -466,21 +464,57 @@
             this.label6.TabIndex = 20;
             this.label6.Text = "IdUseRole";
             // 
-            // tbIdUserRole
+            // tbId
             // 
-            this.tbIdUserRole.Location = new System.Drawing.Point(122, 195);
-            this.tbIdUserRole.Name = "tbIdUserRole";
-            this.tbIdUserRole.Size = new System.Drawing.Size(100, 26);
-            this.tbIdUserRole.TabIndex = 21;
-            this.tbIdUserRole.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbId.Location = new System.Drawing.Point(118, 152);
+            this.tbId.Name = "tbId";
+            this.tbId.ReadOnly = true;
+            this.tbId.Size = new System.Drawing.Size(100, 26);
+            this.tbId.TabIndex = 19;
+            // 
+            // lbId
+            // 
+            this.lbId.AutoSize = true;
+            this.lbId.Location = new System.Drawing.Point(21, 152);
+            this.lbId.Name = "lbId";
+            this.lbId.Size = new System.Drawing.Size(23, 20);
+            this.lbId.TabIndex = 18;
+            this.lbId.Text = "Id";
+            // 
+            // btExportExcel
+            // 
+            this.btExportExcel.BackColor = System.Drawing.Color.SpringGreen;
+            this.btExportExcel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btExportExcel.Location = new System.Drawing.Point(603, 12);
+            this.btExportExcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btExportExcel.Name = "btExportExcel";
+            this.btExportExcel.Size = new System.Drawing.Size(82, 48);
+            this.btExportExcel.TabIndex = 21;
+            this.btExportExcel.Text = "Clear";
+            this.btExportExcel.UseVisualStyleBackColor = false;
+            this.btExportExcel.Click += new System.EventHandler(this.btExportExcel_Click);
+            // 
+            // materialContextMenuStrip1
+            // 
+            this.materialContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialContextMenuStrip1.Depth = 0;
+            this.materialContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.materialContextMenuStrip1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialContextMenuStrip1.Name = "materialContextMenuStrip1";
+            this.materialContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // eventLog1
+            // 
+            this.eventLog1.SynchronizingObject = this;
             // 
             // fManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1449, 585);
+            this.Controls.Add(this.btExportExcel);
             this.Controls.Add(this.pnInfor_Customer);
-            this.Controls.Add(this.btClean);
+            this.Controls.Add(this.btClear);
             this.Controls.Add(this.btUpdate);
             this.Controls.Add(this.btDelete);
             this.Controls.Add(this.Add_Customer);
@@ -497,6 +531,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Customer)).EndInit();
             this.pnInfor_Customer.ResumeLayout(false);
             this.pnInfor_Customer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -541,11 +576,14 @@
         private System.Windows.Forms.Label lbIdGroupCustomer;
         private System.Windows.Forms.TextBox tbIdGroupCustomer;
         private System.Windows.Forms.Button btUpdate;
-        private System.Windows.Forms.Button btClean;
+        private System.Windows.Forms.Button btClear;
         private System.Windows.Forms.Panel pnInfor_Customer;
         private System.Windows.Forms.TextBox tbIdUserRole;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbId;
         private System.Windows.Forms.Label lbId;
+        private System.Windows.Forms.Button btExportExcel;
+        private MaterialSkin.Controls.MaterialContextMenuStrip materialContextMenuStrip1;
+        private System.Diagnostics.EventLog eventLog1;
     }
 }

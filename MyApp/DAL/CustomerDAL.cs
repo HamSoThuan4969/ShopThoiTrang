@@ -47,5 +47,21 @@ namespace DAL
             return DeleteByIds("Customer", "Id", ids);
         }
        
+        // hàm cập nhật khách hàng 
+        public int UpdateCustomers(List<CustomerDTO> customers)
+        {
+            return Update("Customer", "Id", customers, (command, customers)=>
+            {
+                command.Parameters.AddWithValue("@Id", customers.Id);
+                command.Parameters.AddWithValue("@DisplayName", customers.DisplayName);
+                command.Parameters.AddWithValue("@Address", customers.Address);
+                command.Parameters.AddWithValue("@Phone", customers.Phone);
+                command.Parameters.AddWithValue("@Email", customers.Email);
+                command.Parameters.AddWithValue("@MoreInfor", customers.MoreInfor);
+                command.Parameters.AddWithValue("@IdGroupCustomer", customers.IdGroupCustomer);
+                command.Parameters.AddWithValue("@IdUserRole", customers.IdUserRole);
+                command.Parameters.AddWithValue("@DateContract", customers.DateContract);
+            });
+        }
     }
 }
