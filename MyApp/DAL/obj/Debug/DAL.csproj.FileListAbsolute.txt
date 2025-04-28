@@ -7,3 +7,12 @@ C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\DAL\obj\Debug\DAL.csproj.Up2Date
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\DAL\obj\Debug\DAL.dll
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\DAL\obj\Debug\DAL.pdb
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DAL\bin\Debug\DAL.dll
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DAL\bin\Debug\DAL.pdb
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DAL\bin\Debug\DTO.dll
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DAL\bin\Debug\DTO.pdb
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DAL\obj\Debug\DAL.dll
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DAL\obj\Debug\DAL.pdb

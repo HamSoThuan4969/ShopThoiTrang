@@ -20,3 +20,19 @@ C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fAddUserGUI.resources
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fManager.resources
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\Test1.resources
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fAddUserGUI.resources
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fCustomer.resources
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fEmployee.resources
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.Form1.resources
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fRegister.resources
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fManager.resources
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\Test1.resources
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.exe
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.pdb
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fStepJob.resources
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fJobStep2.resources
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.UserControlAJob.resources

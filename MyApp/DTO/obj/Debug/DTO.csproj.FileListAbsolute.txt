@@ -4,3 +4,9 @@ C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\DTO\obj\Debug\DTO.dll
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\DTO\obj\Debug\DTO.pdb
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DTO\bin\Debug\DTO.dll
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DTO\bin\Debug\DTO.pdb
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DTO\obj\Debug\DTO.dll
+C:\Users\votan\OneDrive\Documents\Huy Võ's Documents\LẬP TRÌNH CSDL\ShopThoiTrang\MyApp\DTO\obj\Debug\DTO.pdb

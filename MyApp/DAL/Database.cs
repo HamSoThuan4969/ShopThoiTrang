@@ -15,7 +15,7 @@ namespace DAL
     {
         public static SqlConnection Connect()
         {
-            string strcon = @"Data Source=KUROBA\SQLSERVER_DEV;Initial Catalog=ShopThoiTrang;Integrated Security=True";
+            string strcon = @"Data Source=DESKTOP-ME1OU3E\HUYVO;Initial Catalog=ShopThoiTrang;Integrated Security=True;Trust Server Certificate=True";
             SqlConnection conn = new SqlConnection(strcon); // khởi tạo connect 
             return conn;
 
