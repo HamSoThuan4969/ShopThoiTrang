@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,35 +47,10 @@
             this.báoCáoThốngKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mặtHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doanhThuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridView_Customer = new System.Windows.Forms.DataGridView();
-            this.tvFind = new System.Windows.Forms.TextBox();
-            this.Add_Customer = new System.Windows.Forms.Button();
-            this.btDelete = new System.Windows.Forms.Button();
-            this.tbDisplayName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbAddress = new System.Windows.Forms.TextBox();
-            this.tbPhone = new System.Windows.Forms.TextBox();
-            this.tbEmail = new System.Windows.Forms.TextBox();
-            this.tbMoreInfor = new System.Windows.Forms.TextBox();
-            this.lbIdGroupCustomer = new System.Windows.Forms.Label();
-            this.tbIdGroupCustomer = new System.Windows.Forms.TextBox();
-            this.btUpdate = new System.Windows.Forms.Button();
-            this.btClear = new System.Windows.Forms.Button();
-            this.pnInfor_Customer = new System.Windows.Forms.Panel();
-            this.tbIdUserRole = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tbId = new System.Windows.Forms.TextBox();
-            this.lbId = new System.Windows.Forms.Label();
-            this.btExportExcel = new System.Windows.Forms.Button();
             this.materialContextMenuStrip1 = new MaterialSkin.Controls.MaterialContextMenuStrip();
             this.eventLog1 = new System.Diagnostics.EventLog();
+            this.pnMain = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Customer)).BeginInit();
-            this.pnInfor_Customer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,7 +72,7 @@
             this.báoCáoThốngKêToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(180, 585);
+            this.menuStrip1.Size = new System.Drawing.Size(180, 602);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -123,12 +96,14 @@
             this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
             this.dataToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.dataToolStripMenuItem.Text = "Data";
+            this.dataToolStripMenuItem.Click += new System.EventHandler(this.dataToolStripMenuItem_Click);
             // 
             // groupToolStripMenuItem
             // 
             this.groupToolStripMenuItem.Name = "groupToolStripMenuItem";
             this.groupToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.groupToolStripMenuItem.Text = "Group";
+            this.groupToolStripMenuItem.Click += new System.EventHandler(this.groupToolStripMenuItem_Click);
             // 
             // khoToolStripMenuItem
             // 
@@ -218,281 +193,14 @@
             // mặtHàngToolStripMenuItem
             // 
             this.mặtHàngToolStripMenuItem.Name = "mặtHàngToolStripMenuItem";
-            this.mặtHàngToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.mặtHàngToolStripMenuItem.Size = new System.Drawing.Size(181, 34);
             this.mặtHàngToolStripMenuItem.Text = "Mặt hàng";
             // 
             // doanhThuToolStripMenuItem
             // 
             this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
-            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(181, 34);
             this.doanhThuToolStripMenuItem.Text = "Doanh thu";
-            // 
-            // dataGridView_Customer
-            // 
-            this.dataGridView_Customer.AllowDrop = true;
-            this.dataGridView_Customer.AllowUserToDeleteRows = false;
-            this.dataGridView_Customer.AllowUserToResizeColumns = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.dataGridView_Customer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridView_Customer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView_Customer.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView_Customer.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView_Customer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Customer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView_Customer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_Customer.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView_Customer.Location = new System.Drawing.Point(214, 128);
-            this.dataGridView_Customer.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
-            this.dataGridView_Customer.Name = "dataGridView_Customer";
-            this.dataGridView_Customer.RowHeadersVisible = false;
-            this.dataGridView_Customer.RowHeadersWidth = 62;
-            this.dataGridView_Customer.RowTemplate.Height = 28;
-            this.dataGridView_Customer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_Customer.Size = new System.Drawing.Size(796, 425);
-            this.dataGridView_Customer.TabIndex = 2;
-            this.dataGridView_Customer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Customer_CellClick);
-            // 
-            // tvFind
-            // 
-            this.tvFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)), true);
-            this.tvFind.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.tvFind.Location = new System.Drawing.Point(781, 33);
-            this.tvFind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tvFind.Name = "tvFind";
-            this.tvFind.Size = new System.Drawing.Size(229, 26);
-            this.tvFind.TabIndex = 3;
-            this.tvFind.Text = "Nhập thông tin tìm kiếm\r\n";
-            this.tvFind.TextChanged += new System.EventHandler(this.tvFind_TextChanged);
-            // 
-            // Add_Customer
-            // 
-            this.Add_Customer.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.Add_Customer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Add_Customer.Location = new System.Drawing.Point(214, 12);
-            this.Add_Customer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Add_Customer.Name = "Add_Customer";
-            this.Add_Customer.Size = new System.Drawing.Size(82, 48);
-            this.Add_Customer.TabIndex = 4;
-            this.Add_Customer.Text = "Add";
-            this.Add_Customer.UseVisualStyleBackColor = false;
-            this.Add_Customer.Click += new System.EventHandler(this.Add_Customer_Click);
-            // 
-            // btDelete
-            // 
-            this.btDelete.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btDelete.Location = new System.Drawing.Point(302, 11);
-            this.btDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btDelete.Name = "btDelete";
-            this.btDelete.Size = new System.Drawing.Size(82, 48);
-            this.btDelete.TabIndex = 5;
-            this.btDelete.Text = "DELETE";
-            this.btDelete.UseVisualStyleBackColor = false;
-            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
-            // 
-            // tbDisplayName
-            // 
-            this.tbDisplayName.Location = new System.Drawing.Point(118, 238);
-            this.tbDisplayName.Name = "tbDisplayName";
-            this.tbDisplayName.Size = new System.Drawing.Size(246, 26);
-            this.tbDisplayName.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 238);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 325);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 20);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Email";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 367);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 20);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Address";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 408);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 20);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Phone";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 452);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 20);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "MoreInfor";
-            // 
-            // tbAddress
-            // 
-            this.tbAddress.Location = new System.Drawing.Point(122, 367);
-            this.tbAddress.Name = "tbAddress";
-            this.tbAddress.Size = new System.Drawing.Size(281, 26);
-            this.tbAddress.TabIndex = 12;
-            this.tbAddress.TextChanged += new System.EventHandler(this.tbAddress_TextChanged);
-            // 
-            // tbPhone
-            // 
-            this.tbPhone.Location = new System.Drawing.Point(122, 408);
-            this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(266, 26);
-            this.tbPhone.TabIndex = 13;
-            // 
-            // tbEmail
-            // 
-            this.tbEmail.Location = new System.Drawing.Point(118, 322);
-            this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(281, 26);
-            this.tbEmail.TabIndex = 14;
-            // 
-            // tbMoreInfor
-            // 
-            this.tbMoreInfor.Location = new System.Drawing.Point(122, 452);
-            this.tbMoreInfor.Multiline = true;
-            this.tbMoreInfor.Name = "tbMoreInfor";
-            this.tbMoreInfor.Size = new System.Drawing.Size(266, 75);
-            this.tbMoreInfor.TabIndex = 15;
-            this.tbMoreInfor.TextChanged += new System.EventHandler(this.tbMoreInfor_TextChanged);
-            // 
-            // lbIdGroupCustomer
-            // 
-            this.lbIdGroupCustomer.AutoSize = true;
-            this.lbIdGroupCustomer.Location = new System.Drawing.Point(21, 281);
-            this.lbIdGroupCustomer.Name = "lbIdGroupCustomer";
-            this.lbIdGroupCustomer.Size = new System.Drawing.Size(54, 20);
-            this.lbIdGroupCustomer.TabIndex = 17;
-            this.lbIdGroupCustomer.Text = "Group";
-            // 
-            // tbIdGroupCustomer
-            // 
-            this.tbIdGroupCustomer.Location = new System.Drawing.Point(118, 281);
-            this.tbIdGroupCustomer.Name = "tbIdGroupCustomer";
-            this.tbIdGroupCustomer.Size = new System.Drawing.Size(224, 26);
-            this.tbIdGroupCustomer.TabIndex = 16;
-            // 
-            // btUpdate
-            // 
-            this.btUpdate.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btUpdate.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btUpdate.Location = new System.Drawing.Point(401, 11);
-            this.btUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btUpdate.Name = "btUpdate";
-            this.btUpdate.Size = new System.Drawing.Size(82, 48);
-            this.btUpdate.TabIndex = 18;
-            this.btUpdate.Text = "Update";
-            this.btUpdate.UseVisualStyleBackColor = false;
-            this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
-            // 
-            // btClear
-            // 
-            this.btClear.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btClear.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btClear.Location = new System.Drawing.Point(506, 12);
-            this.btClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btClear.Name = "btClear";
-            this.btClear.Size = new System.Drawing.Size(82, 48);
-            this.btClear.TabIndex = 19;
-            this.btClear.Text = "Clear";
-            this.btClear.UseVisualStyleBackColor = false;
-            this.btClear.Click += new System.EventHandler(this.btClear_Click_1);
-            // 
-            // pnInfor_Customer
-            // 
-            this.pnInfor_Customer.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pnInfor_Customer.Controls.Add(this.tbIdUserRole);
-            this.pnInfor_Customer.Controls.Add(this.label6);
-            this.pnInfor_Customer.Controls.Add(this.tbId);
-            this.pnInfor_Customer.Controls.Add(this.lbId);
-            this.pnInfor_Customer.Controls.Add(this.tbAddress);
-            this.pnInfor_Customer.Controls.Add(this.label1);
-            this.pnInfor_Customer.Controls.Add(this.label3);
-            this.pnInfor_Customer.Controls.Add(this.tbPhone);
-            this.pnInfor_Customer.Controls.Add(this.tbIdGroupCustomer);
-            this.pnInfor_Customer.Controls.Add(this.lbIdGroupCustomer);
-            this.pnInfor_Customer.Controls.Add(this.tbMoreInfor);
-            this.pnInfor_Customer.Controls.Add(this.label2);
-            this.pnInfor_Customer.Controls.Add(this.tbEmail);
-            this.pnInfor_Customer.Controls.Add(this.label5);
-            this.pnInfor_Customer.Controls.Add(this.label4);
-            this.pnInfor_Customer.Controls.Add(this.tbDisplayName);
-            this.pnInfor_Customer.Location = new System.Drawing.Point(1035, 12);
-            this.pnInfor_Customer.Name = "pnInfor_Customer";
-            this.pnInfor_Customer.Size = new System.Drawing.Size(409, 541);
-            this.pnInfor_Customer.TabIndex = 20;
-            // 
-            // tbIdUserRole
-            // 
-            this.tbIdUserRole.Location = new System.Drawing.Point(122, 195);
-            this.tbIdUserRole.Name = "tbIdUserRole";
-            this.tbIdUserRole.ReadOnly = true;
-            this.tbIdUserRole.Size = new System.Drawing.Size(100, 26);
-            this.tbIdUserRole.TabIndex = 21;
-            this.tbIdUserRole.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(4, 201);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 20);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "IdUseRole";
-            // 
-            // tbId
-            // 
-            this.tbId.Location = new System.Drawing.Point(118, 152);
-            this.tbId.Name = "tbId";
-            this.tbId.ReadOnly = true;
-            this.tbId.Size = new System.Drawing.Size(100, 26);
-            this.tbId.TabIndex = 19;
-            // 
-            // lbId
-            // 
-            this.lbId.AutoSize = true;
-            this.lbId.Location = new System.Drawing.Point(21, 152);
-            this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(23, 20);
-            this.lbId.TabIndex = 18;
-            this.lbId.Text = "Id";
-            // 
-            // btExportExcel
-            // 
-            this.btExportExcel.BackColor = System.Drawing.Color.SpringGreen;
-            this.btExportExcel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btExportExcel.Location = new System.Drawing.Point(603, 12);
-            this.btExportExcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btExportExcel.Name = "btExportExcel";
-            this.btExportExcel.Size = new System.Drawing.Size(82, 48);
-            this.btExportExcel.TabIndex = 21;
-            this.btExportExcel.Text = "Clear";
-            this.btExportExcel.UseVisualStyleBackColor = false;
-            this.btExportExcel.Click += new System.EventHandler(this.btExportExcel_Click);
             // 
             // materialContextMenuStrip1
             // 
@@ -507,19 +215,19 @@
             // 
             this.eventLog1.SynchronizingObject = this;
             // 
+            // pnMain
+            // 
+            this.pnMain.Location = new System.Drawing.Point(200, 12);
+            this.pnMain.Name = "pnMain";
+            this.pnMain.Size = new System.Drawing.Size(1237, 562);
+            this.pnMain.TabIndex = 1;
+            // 
             // fManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1449, 585);
-            this.Controls.Add(this.btExportExcel);
-            this.Controls.Add(this.pnInfor_Customer);
-            this.Controls.Add(this.btClear);
-            this.Controls.Add(this.btUpdate);
-            this.Controls.Add(this.btDelete);
-            this.Controls.Add(this.Add_Customer);
-            this.Controls.Add(this.tvFind);
-            this.Controls.Add(this.dataGridView_Customer);
+            this.ClientSize = new System.Drawing.Size(1449, 602);
+            this.Controls.Add(this.pnMain);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -528,12 +236,8 @@
             this.Load += new System.EventHandler(this.fManager_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Customer)).EndInit();
-            this.pnInfor_Customer.ResumeLayout(false);
-            this.pnInfor_Customer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -545,9 +249,6 @@
         private System.Windows.Forms.ToolStripMenuItem dataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem groupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem khoToolStripMenuItem;
-        private System.Windows.Forms.TextBox tvFind;
-        private System.Windows.Forms.DataGridView dataGridView_Customer;
-        private System.Windows.Forms.Button Add_Customer;
 
         private System.Windows.Forms.ToolStripMenuItem quảnLýSảnPhẩmToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nhậpSảnPhẩmTừKhoToolStripMenuItem;
@@ -562,28 +263,8 @@
         private System.Windows.Forms.ToolStripMenuItem báoCáoThốngKêToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mặtHàngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem doanhThuToolStripMenuItem;
-        private System.Windows.Forms.Button btDelete;
-        private System.Windows.Forms.TextBox tbDisplayName;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbAddress;
-        private System.Windows.Forms.TextBox tbPhone;
-        private System.Windows.Forms.TextBox tbEmail;
-        private System.Windows.Forms.TextBox tbMoreInfor;
-        private System.Windows.Forms.Label lbIdGroupCustomer;
-        private System.Windows.Forms.TextBox tbIdGroupCustomer;
-        private System.Windows.Forms.Button btUpdate;
-        private System.Windows.Forms.Button btClear;
-        private System.Windows.Forms.Panel pnInfor_Customer;
-        private System.Windows.Forms.TextBox tbIdUserRole;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox tbId;
-        private System.Windows.Forms.Label lbId;
-        private System.Windows.Forms.Button btExportExcel;
         private MaterialSkin.Controls.MaterialContextMenuStrip materialContextMenuStrip1;
         private System.Diagnostics.EventLog eventLog1;
+        private System.Windows.Forms.Panel pnMain;
     }
 }
