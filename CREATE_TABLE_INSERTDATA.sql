@@ -121,16 +121,17 @@ Go
 CREATE TABLE Sale (
     Id nvarchar(128) PRIMARY KEY,
     DisplayName NVARCHAR(255),
-    typeSale NVARCHAR(50),  -- 'Customer', 'ComboSet', 'Bill', 'Event'
+    TypeSale NVARCHAR(50),  -- 'Customer', 'ComboSet', 'Bill', 'Event'
     StartDate DATE,
     EndDate DATE
 )
 Go
 CREATE TABLE Sale_Detail (
-    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Id nvarchar(128) PRIMARY KEY,
     IdSale nvarchar(128) not null,  -- Liên kết với bảng Sale
-    Discount INT,  -- Mức giảm giá
-    ConditionValue INT NULL,  -- Điều kiện (VD: tổng hóa đơn tối thiểu)
+    TypeSale nvarchar(50)
+    Discount nvarchar(50),  -- Mức giảm giá
+    ConditionValue nvarchar(100) NULL,  -- Điều kiện (VD: tổng hóa đơn tối thiểu)
     Description NVARCHAR(255),  -- Mô tả điều kiện sale
     FOREIGN KEY (IdSale) REFERENCES Sale(Id)
 )
@@ -256,17 +257,17 @@ INSERT INTO Customer (Id, DisplayName, IdGroupCustomer, Address, Phone, Email, D
 VALUES ('CUST2', 'Customer 2', 'GC2', '101 Road', '789789789', 'customer2@example.com', '2025-04-02', 'More info 2', 2);
 
 
--- Thêm dữ liệu vào bảng Sale
-INSERT INTO Sale (Id, DisplayName, typeSale, StartDate, EndDate) 
-VALUES ('SALE1', 'Sale 1', 'Event', '2025-04-01', '2025-04-10');
-INSERT INTO Sale (Id, DisplayName, typeSale, StartDate, EndDate) 
-VALUES ('SALE2', 'Sale 2', 'ComboSet', '2025-04-05', '2025-04-15');
+-- -- Thêm dữ liệu vào bảng Sale
+-- INSERT INTO Sale (Id, DisplayName, typeSale, StartDate, EndDate) 
+-- VALUES ('SALE1', 'Sale 1', 'Event', '2025-04-01', '2025-04-10');
+-- INSERT INTO Sale (Id, DisplayName, typeSale, StartDate, EndDate) 
+-- VALUES ('SALE2', 'Sale 2', 'ComboSet', '2025-04-05', '2025-04-15');
 
--- Thêm dữ liệu vào bảng Sale_Detail
-INSERT INTO Sale_Detail (IdSale, Discount, ConditionValue, Description) 
-VALUES ('SALE1', 10, NULL, '10% discount on all items');
-INSERT INTO Sale_Detail (IdSale, Discount, ConditionValue, Description) 
-VALUES ('SALE2', 20, 1000, '20% discount on orders over 1000');
+-- -- Thêm dữ liệu vào bảng Sale_Detail
+-- INSERT INTO Sale_Detail (IdSale, Discount, ConditionValue, Description) 
+-- VALUES ('SALE1', 10, NULL, '10% discount on all items');
+-- INSERT INTO Sale_Detail (IdSale, Discount, ConditionValue, Description) 
+-- VALUES ('SALE2', 20, 1000, '20% discount on orders over 1000');
 
 -- Thêm dữ liệu vào bảng Output
 INSERT INTO Output (Id, IdCustomer, IdSale_Output, DateOuput, ToTal, Type, status) 
