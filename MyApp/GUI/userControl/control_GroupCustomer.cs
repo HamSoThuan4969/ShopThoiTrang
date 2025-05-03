@@ -14,17 +14,17 @@ using System.Windows.Forms;
 
 namespace GUI.userControl
 {
-    public partial class contronl_GroupCustomer : UserControl
+    public partial class control_GroupCustomer : UserControl
     {
         private GroupCustomerBLL groupCustomerBLL = new GroupCustomerBLL();
-        public contronl_GroupCustomer()
+        public control_GroupCustomer()
         {
             InitializeComponent();
             LoadCustomerList(); // gọi hàm lấy danh sách khách hàng lên form 
             AddCheckboxColumn(); // Thêm cột checkbox vào DataGridView
                                  // Đăng ký sự kiện CellClick cho DataGridView
             dataGridView_GroupCustomer.CellClick += DataGridView_GroupCustomer_CellClick;
-            //btUpdate.Click += btUpdate_Click;
+            btUpdate.Click += btUpdate_Click;
 
         }
 
@@ -59,9 +59,9 @@ namespace GUI.userControl
 
                 // Hiển thị dữ liệu từ dòng đã chọn vào các TextBox
                 tbId.Text = selectedRow.Cells["Id"].Value?.ToString();
-                tbTypeGroup.Text = selectedRow.Cells["IdUserRole"].Value?.ToString();
+                tbTypeGroup.Text = selectedRow.Cells["TypeGroup"].Value?.ToString();
                 tbDisplayName.Text = selectedRow.Cells["DisplayName"].Value?.ToString();
-               
+
             }
         }
         private void btAdd_Click(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace GUI.userControl
             {
                 GroupCustomerDTO groupCustomer = new GroupCustomerDTO
                 {
-                    Id = tbId.Text.Trim(),
+
                     DisplayName = tbDisplayName.Text.Trim(),
                     TypeGroup = tbTypeGroup.Text.Trim()
 
@@ -109,11 +109,68 @@ namespace GUI.userControl
                 MessageBox.Show($"Lỗi khi xóa khách hàng: {ex.Message}");
             }
         }
+        private void btUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                GroupCustomerDTO groupCustomer = new GroupCustomerDTO
+                {
+                    Id = tbId.Text.Trim(),
+                    DisplayName = tbDisplayName.Text.Trim(),
+                    TypeGroup = tbTypeGroup.Text.Trim()
+                };
+                groupCustomerBLL.UpdateGroupCustomer(new List<GroupCustomerDTO> { groupCustomer });
+                MessageBox.Show("Cập nhật khách hàng thành công!");
+                LoadCustomerList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi cập nhật khách hàng: {ex.Message}");
+            }
 
 
 
 
 
 
+        }
+
+        private void btClear_Click(object sender, EventArgs e)
+        {
+            tbId.Text = "";
+            tbDisplayName.Text = "";
+            tbTypeGroup.Text = "";
+
+        }
+
+        private void btExportExcel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Gọi BLL để lấy toàn bộ dữ liệu nhóm khách hàng
+                List<GroupCustomerDTO> groupCustomers = groupCustomerBLL.GetGroupCustomer();
+
+                // Hiển thị hộp thoại lưu file
+                SaveFileDialog saveFileDialog = new SaveFileDialog
+                {
+                    Filter = "Excel Files|*.xlsx",
+                    Title = "Lưu file Excel",
+                    FileName = "DanhSachNhomKhachHang.xlsx"
+                };
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Gọi lớp ExcelExporter để xuất dữ liệu
+                    ExcelExporter exporter = new ExcelExporter();
+                    exporter.ExportToExcel(groupCustomers, saveFileDialog.FileName, "GroupCustomers");
+
+                    MessageBox.Show("Xuất dữ liệu ra file Excel thành công!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi xuất dữ liệu ra Excel: {ex.Message}");
+            }
+        }
     }
 }

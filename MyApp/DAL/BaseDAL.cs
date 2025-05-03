@@ -23,6 +23,21 @@ namespace DAL
         {
             return new SqlConnection(connectionString);
         }
+        // Lấy thông tin của một đối tượng bất kỳ
+        public T GetById<T>(String tableName, string columnName, string id) where T : new ()
+        {
+            try
+            {
+                // Tạo câu lệnh truy vấn
+                string query = $"SELECT * FROM {tableName} WHERE {columnName} = @Id";
+                // Thực thi truy vấn vấn đối tượng 
+                var parameters = new object[] { id };
+                return dataProvider.ExecuteQuery<T>(query, parameters).FirstOrDefault();
+            }catch(Exception ex)
+            {
+                throw new Exception($"Lỗi khi lấy thông tin đối tượng từ bảng {tableName}: {ex.Message}");
+            }
+        }
 
         // Hàm lấy Id lớn nhất từ cơ sở dữ liệu
         public string GetMaxID(string tableName, string columnName, string prefix)

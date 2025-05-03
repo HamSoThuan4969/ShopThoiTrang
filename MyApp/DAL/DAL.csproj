@@ -50,6 +50,8 @@
     <Compile Include="DataProvider.cs" />
     <Compile Include="GroupCustomerDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaleDAL.cs" />
+    <Compile Include="Sale_DetailDAL.cs" />
     <Compile Include="UsersDAL.cs" />
   </ItemGroup>
   <ItemGroup>

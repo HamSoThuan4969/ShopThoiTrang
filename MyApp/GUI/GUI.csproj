@@ -130,11 +130,17 @@
     <Compile Include="userControl\control_Customer.Designer.cs">
       <DependentUpon>control_Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="userControl\contronl_GroupCustomer.cs">
+    <Compile Include="userControl\control_GroupCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="userControl\contronl_GroupCustomer.Designer.cs">
-      <DependentUpon>contronl_GroupCustomer.cs</DependentUpon>
+    <Compile Include="userControl\control_GroupCustomer.Designer.cs">
+      <DependentUpon>control_GroupCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\control_Sale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\control_Sale.Designer.cs">
+      <DependentUpon>control_Sale.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="fAddUsersGUI.resx">
       <DependentUpon>fAddUsersGUI.cs</DependentUpon>
@@ -169,8 +175,11 @@
     <EmbeddedResource Include="userControl\control_Customer.resx">
       <DependentUpon>control_Customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="userControl\contronl_GroupCustomer.resx">
-      <DependentUpon>contronl_GroupCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="userControl\control_GroupCustomer.resx">
+      <DependentUpon>control_GroupCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControl\control_Sale.resx">
+      <DependentUpon>control_Sale.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

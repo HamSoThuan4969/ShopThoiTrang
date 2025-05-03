@@ -1,6 +1,6 @@
 ﻿namespace GUI.userControl
 {
-    partial class contronl_GroupCustomer
+    partial class control_GroupCustomer
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbTypeGroup = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbDisplayName = new System.Windows.Forms.TextBox();
@@ -43,8 +45,6 @@
             this.btClear = new System.Windows.Forms.Button();
             this.btExportExcel = new System.Windows.Forms.Button();
             this.dataGridView_GroupCustomer = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbTypeGroup = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_GroupCustomer)).BeginInit();
@@ -72,6 +72,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(465, 628);
             this.panel2.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 301);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 20);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "TypeGroup";
+            // 
+            // tbTypeGroup
+            // 
+            this.tbTypeGroup.Location = new System.Drawing.Point(83, 301);
+            this.tbTypeGroup.Name = "tbTypeGroup";
+            this.tbTypeGroup.Size = new System.Drawing.Size(365, 26);
+            this.tbTypeGroup.TabIndex = 15;
             // 
             // label7
             // 
@@ -134,6 +150,7 @@
             this.btAdd.TabIndex = 3;
             this.btAdd.Text = "Add";
             this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // btUpdate
             // 
@@ -143,6 +160,7 @@
             this.btUpdate.TabIndex = 7;
             this.btUpdate.Text = "Update";
             this.btUpdate.UseVisualStyleBackColor = true;
+            this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
             // 
             // btDelete
             // 
@@ -152,6 +170,7 @@
             this.btDelete.TabIndex = 4;
             this.btDelete.Text = "Delete";
             this.btDelete.UseVisualStyleBackColor = true;
+            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
             // 
             // btClear
             // 
@@ -161,6 +180,7 @@
             this.btClear.TabIndex = 6;
             this.btClear.Text = "Clear";
             this.btClear.UseVisualStyleBackColor = true;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
             // btExportExcel
             // 
@@ -170,18 +190,20 @@
             this.btExportExcel.TabIndex = 5;
             this.btExportExcel.Text = "EportExcel";
             this.btExportExcel.UseVisualStyleBackColor = true;
+            this.btExportExcel.Click += new System.EventHandler(this.btExportExcel_Click);
             // 
             // dataGridView_GroupCustomer
             // 
             this.dataGridView_GroupCustomer.AllowDrop = true;
+            this.dataGridView_GroupCustomer.AllowUserToAddRows = false;
             this.dataGridView_GroupCustomer.AllowUserToDeleteRows = false;
             this.dataGridView_GroupCustomer.AllowUserToResizeColumns = false;
             this.dataGridView_GroupCustomer.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dataGridView_GroupCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dataGridView_GroupCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_GroupCustomer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView_GroupCustomer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView_GroupCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -195,23 +217,7 @@
             this.dataGridView_GroupCustomer.Size = new System.Drawing.Size(803, 419);
             this.dataGridView_GroupCustomer.TabIndex = 11;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 301);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 20);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "TypeGroup";
-            // 
-            // tbTypeGroup
-            // 
-            this.tbTypeGroup.Location = new System.Drawing.Point(83, 301);
-            this.tbTypeGroup.Name = "tbTypeGroup";
-            this.tbTypeGroup.Size = new System.Drawing.Size(365, 26);
-            this.tbTypeGroup.TabIndex = 15;
-            // 
-            // Contronl_GroupCustomer
+            // control_GroupCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -219,7 +225,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView_GroupCustomer);
-            this.Name = "Contronl_GroupCustomer";
+            this.Name = "control_GroupCustomer";
             this.Size = new System.Drawing.Size(1280, 658);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

@@ -102,7 +102,15 @@ namespace GUI
         private void groupToolStripMenuItem_Click(object sender, EventArgs e)
         {
             pnMain.Controls.Clear();              // Dọn panel
-            var uc = new control_Customer();          // Tạo UC mới
+            var uc = new control_GroupCustomer();          // Tạo UC mới
+            uc.Dock = DockStyle.Fill;                 // Căng full panel
+            pnMain.Controls.Add(uc);
+        }
+
+        private void quảnLýKhuyếnMãiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnMain.Controls.Clear();              // Dọn panel
+            var uc = new control_Sale();          // Tạo UC mới
             uc.Dock = DockStyle.Fill;                 // Căng full panel
             pnMain.Controls.Add(uc);
         }

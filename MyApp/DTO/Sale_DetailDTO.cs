@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class SaleDetailDTO
+    public class Sale_DetailDTO
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string IdSale { get; set; }
-        public int Discount { get; set; }
-        public int? ConditionValue { get; set; }
+        public string Discount { get; set; }
+        public string TypeSale { get; set; }
+        public string ConditionValue { get; set; }
         public string Description { get; set; }
     }
 

@@ -50,7 +50,7 @@
     <Compile Include="OutputDTO.cs" />
     <Compile Include="OutputInforDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SaleDetailDTO.cs" />
+    <Compile Include="Sale_DetailDTO.cs" />
     <Compile Include="SaleDTO.cs" />
     <Compile Include="SaleOutpuntDTO.cs" />
     <Compile Include="Sale_OutputInforDTO.cs" />
