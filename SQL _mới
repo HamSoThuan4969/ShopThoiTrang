@@ -1,0 +1,378 @@
+CREATE DATABASE Testquai
+Go 
+USE Testquai;
+GO
+
+
+-- Table: Unit
+CREATE TABLE Unit (
+  Id INT IDENTITY(1,1) PRIMARY KEY,
+  DisplayName NVARCHAR(1000)
+);
+
+-- Table: UserRole
+CREATE TABLE UserRole (
+  Id INT IDENTITY(1,1) PRIMARY KEY,
+  DisplayName NVARCHAR(MAX)
+);
+
+-- Table: Users
+CREATE TABLE Users (
+  Id INT IDENTITY(1,1),
+  DisplayName NVARCHAR(MAX),
+  UserName NVARCHAR(100) PRIMARY KEY,
+  Password NVARCHAR(MAX),
+  IdUserRole INT NOT NULL,
+  FOREIGN KEY(IdUserRole) REFERENCES UserRole(Id)
+);
+
+-- Table: Supplier
+CREATE TABLE Supplier (
+  Id INT IDENTITY(1,1) PRIMARY KEY,
+  DisplayName NVARCHAR(1000),
+  Address NVARCHAR(MAX),
+  Email NVARCHAR(200),
+  Phone NVARCHAR(20),
+  TypeObject NVARCHAR(100),
+  MoreInfo NVARCHAR(MAX),
+  ContractDate DATETIME
+);
+
+-- Table: GroupCustomer
+CREATE TABLE GroupCustomer (
+  Id NVARCHAR(128) PRIMARY KEY,
+  DisplayName NVARCHAR(200),
+  TypeGroup NVARCHAR(100)
+);
+
+
+-- Table: Customer
+CREATE TABLE Customer (
+  Id NVARCHAR(100) PRIMARY KEY, -- sửa độ dài trùng với Users.UserName
+  Name NVARCHAR(MAX),
+  IdGroupCustomer NVARCHAR(128) NOT NULL,
+  Address NVARCHAR(MAX),
+  Phone NVARCHAR(20),
+  Email NVARCHAR(50),
+  DateContract DATETIME,
+  MoreInfo NVARCHAR(MAX),
+  IdUserRole INT NOT NULL,
+  FOREIGN KEY(IdGroupCustomer) REFERENCES GroupCustomer(Id),
+  FOREIGN KEY(IdUserRole) REFERENCES UserRole(Id),
+  FOREIGN KEY(Id) REFERENCES Users(UserName)
+);
+
+-- Table: Staff
+CREATE TABLE Staff (
+  Id NVARCHAR(100) PRIMARY KEY, -- Khóa chính, trùng với Users.UserName
+  Name NVARCHAR(100),
+  Phone NVARCHAR(20),
+  Birthday DATE,
+  Address NVARCHAR(MAX),
+  IdUserRole INT NOT NULL,
+  StartDate DATE,
+  FOREIGN KEY(IdUserRole) REFERENCES UserRole(Id),
+  FOREIGN KEY(Id) REFERENCES Users(UserName) -- Khóa ngoại liên kết với Users.UserName
+);
+
+-- Table: SetObject
+CREATE TABLE SetObject (
+  Id INT IDENTITY(1,1) PRIMARY KEY,
+  DisplayName NVARCHAR(100)
+);
+
+-- Table: Input
+CREATE TABLE Input (
+  Id NVARCHAR(128) PRIMARY KEY,
+  Quantity INT NOT NULL,
+  Total FLOAT DEFAULT 0,
+  Type NVARCHAR(100),
+  BarCode NVARCHAR(MAX),
+  DateInput DATETIME
+);
+
+-- Table: [Object]
+CREATE TABLE [Object] (
+  Id NVARCHAR(128) PRIMARY KEY,
+  DisplayName NVARCHAR(MAX),
+  IdSet INT,
+  IdUnit INT NOT NULL,
+  IdSupplier INT NOT NULL,
+  InputPrice INT,
+  FOREIGN KEY(IdUnit) REFERENCES Unit(Id),
+  FOREIGN KEY(IdSupplier) REFERENCES Supplier(Id),
+  FOREIGN KEY(IdSet) REFERENCES SetObject(Id)
+);
+
+-- Table: InputInfor
+CREATE TABLE InputInfor (
+  Id NVARCHAR(128) PRIMARY KEY,
+  IdInput NVARCHAR(128) NOT NULL,
+  IdObject NVARCHAR(128) NOT NULL,
+  Quantity INT,
+  InputPrice INT,
+  OutputPrice INT,
+  FOREIGN KEY(IdInput) REFERENCES Input(Id),
+  FOREIGN KEY(IdObject) REFERENCES [Object](Id)
+);
+
+-- Table: Sale
+CREATE TABLE Sale (
+  Id NVARCHAR(128) PRIMARY KEY,
+  DisplayName NVARCHAR(255),
+  TypeSale NVARCHAR(50),
+  StartDate DATE,
+  EndDate DATE
+);
+
+-- Table: Sale_Detail
+CREATE TABLE Sale_Detail (
+  Id INT IDENTITY(1,1) PRIMARY KEY,
+  IdSale NVARCHAR(128) NOT NULL,
+  Discount INT,
+  ConditionValue INT NULL,
+  Description NVARCHAR(255),
+  FOREIGN KEY (IdSale) REFERENCES Sale(Id)
+);
+
+-- Table: Output
+CREATE TABLE Output (
+  Id NVARCHAR(128) PRIMARY KEY,
+  IdCustomer NVARCHAR(100),
+  IdSale_Output NVARCHAR(128),
+  DateOutput DATETIME,
+  Total FLOAT DEFAULT 0,
+  Type NVARCHAR(100),
+  Status NVARCHAR(50),
+  FOREIGN KEY(IdCustomer) REFERENCES Customer(Id)
+);
+
+-- Table: Sale_Output
+CREATE TABLE Sale_Output (
+  Id NVARCHAR(128) PRIMARY KEY,
+  IdSale NVARCHAR(128) NULL,
+  IdOutput NVARCHAR(128) NOT NULL,
+  DiscountValue FLOAT DEFAULT 0,
+  FOREIGN KEY(IdSale) REFERENCES Sale(Id),
+  FOREIGN KEY(IdOutput) REFERENCES Output(Id)
+);
+GO
+
+ALTER TABLE Output
+ADD CONSTRAINT FK_Output_Sale_Output FOREIGN KEY (IdSale_Output) REFERENCES Sale_Output(Id);
+GO
+
+-- Table: OutputInfor
+CREATE TABLE OutputInfor (
+  Id NVARCHAR(128) PRIMARY KEY,
+  IdObject NVARCHAR(128) NOT NULL,
+  IdInputInfor NVARCHAR(128) NOT NULL,
+  IdCustomer NVARCHAR(100),
+  IdSale_OutputInfor NVARCHAR(128) NULL,
+  Quantity INT,
+  InputPrice FLOAT DEFAULT 0,
+  FOREIGN KEY(IdObject) REFERENCES [Object](Id),
+  FOREIGN KEY(IdInputInfor) REFERENCES InputInfor(Id),
+  FOREIGN KEY(IdCustomer) REFERENCES Customer(Id)
+);
+GO
+
+-- Table: Sale_OutputInfor
+CREATE TABLE Sale_OutputInfor (
+  Id NVARCHAR(128) PRIMARY KEY,
+  IdSale NVARCHAR(128) NULL,
+  IdOutputInfor NVARCHAR(128) NOT NULL,
+  DiscountValue FLOAT DEFAULT 0,
+  FOREIGN KEY(IdSale) REFERENCES Sale(Id),
+  FOREIGN KEY(IdOutputInfor) REFERENCES OutputInfor(Id)
+);
+GO
+
+ALTER TABLE OutputInfor
+ADD CONSTRAINT FK_OutputInfor_Sale_OutputInfor FOREIGN KEY (IdSale_OutputInfor) REFERENCES Sale_OutputInfor(Id);
+GO
+
+-- Data for Unit
+INSERT INTO Unit (DisplayName) VALUES (N'Combo');
+INSERT INTO Unit (DisplayName) VALUES (N'Collection');
+INSERT INTO Unit (DisplayName) VALUES (N'Product');
+
+-- Data for Supplier
+INSERT INTO Supplier (DisplayName, Address, Email, Phone, TypeObject, MoreInfo, ContractDate) VALUES
+  ('Zara Vincom Q1', '72 Le Thanh Ton Street, Ben Nghe, District 1, Ho Chi Minh City', 'contact.au@zara.com', '02444581693', 'New cooperation', 'Quality supplier', '2024-06-15'),
+  ('Uniqlo Gigamall', '242 Pham Van Dong Street, Hiep Binh Chanh, Thu Duc, Ho Chi Minh City', 'info@vaidepcorp.com', '02871091025', 'Casual', 'Long-term cooperation', '2024-09-30'),
+  ('Anima HCM', '730 Vo Van Kiet, Ward 1, District 5, HCM', 'info@anima.vn', '0901770066', 'Office clothes', 'Long-term cooperation', '2024-01-01'),
+  ('Elise Binh Thanh', '449B Le Quang Dinh Street, Ward 5, Binh Thanh District, Ho Chi Minh City', 'support@ELISE.vn', '02835150035', 'Luxury', 'New cooperation', '2024-01-01');
+
+-- Data for UserRole
+INSERT INTO UserRole (DisplayName) VALUES (N'Admin');
+INSERT INTO UserRole (DisplayName) VALUES (N'Customer');
+INSERT INTO UserRole (DisplayName) VALUES (N'Staff');
+
+-- Data for GroupCustomer
+INSERT INTO GroupCustomer (Id, DisplayName, TypeGroup) VALUES
+  ('GC001', 'Loyal Customers', 'Loyal'),
+  ('GC002', 'New Customers', 'New'),
+  ('GC003', 'Corporate Customers', 'Corporate');
+
+   -- Users for Customers
+INSERT INTO Users (DisplayName, UserName, Password, IdUserRole) VALUES
+(N'Nguyen Thi Lan', 'CUS001', 'password123', 2),
+(N'Tran Van Dung', 'CUS002', 'password123', 2),
+(N'ABC Company Limited', 'CUS003', 'password123', 2),
+(N'Nguyen Van Minh', 'CUS004', 'password123', 2),
+(N'Tran Thi Hoa', 'CUS005', 'password123', 2),
+(N'Le Van Tuan', 'CUS006', 'password123', 2),
+(N'Nguyen Thi Huong', 'CUS007', 'password123', 2),
+(N'Tran Quoc Bao', 'CUS008', 'password123', 2),
+(N'Le Thi Ngoc', 'CUS009', 'password123', 2),
+(N'Nguyen Cong Phuong', 'CUS010', 'password123', 2),
+(N'Nguyen Thi Lan', 'CUS011', 'password123', 2),
+(N'Tran Van Dung', 'CUS012', 'password123', 2),
+(N'Minh Hoang Company', 'CUS013', 'password123', 2),
+(N'Bacon Ino Company', 'CUS014', 'password123', 2);
+
+-- Users for Staff
+INSERT INTO Users (DisplayName, UserName, Password, IdUserRole) VALUES
+(N'Nguyen Kien An', 'STAFF001', 'admin123', 3),
+(N'Vo Tan Huy', 'STAFF002', 'admin123', 1),
+(N'Nguyen Chiu', 'STAFF003', 'admin123', 3);
+
+-- Data for Customer
+INSERT INTO Customer (Id, Name, IdGroupCustomer, Address, Phone, Email, DateContract, MoreInfo, IdUserRole) VALUES
+('CUS001', 'Nguyen Thi Lan', 'GC001', '123 Le Loi Street, District 1, Ho Chi Minh City', '0123456789', 'lan@email.com', '2022-03-01', 'Loyal Customer', 3),
+('CUS002', 'Tran Van Dung', 'GC002', '456 Le Trong Tan, Tan Phu District, Ho Chi Minh City', '0987654321', 'dung@email.com', '2023-01-15', 'New Customer', 3),
+('CUS003', 'ABC Company Limited', 'GC003', '789 Tran Hung Dao Street, District 5, Ho Chi Minh City', '0456789123', 'info@abccompany.com', '2022-06-30', 'Corporate Customers', 3),
+('CUS004', 'Nguyen Van Minh', 'GC002', '23 Bac Hai Street, Tan Binh District, Ho Chi Minh City', '0123987654', 'minh@email.com', '2023-02-01', 'New Customers', 3),
+('CUS005', 'Tran Thi Hoa', 'GC001', '456 Nguyen Tri Phuong Street, District 5, Ho Chi Minh City', '0987123456', 'hoa@email.com', '2021-06-15', 'Loyal Customers', 3),
+('CUS006', 'Le Van Tuan', 'GC002', '789 Nguyen Trai Street, District 5, Ho Chi Minh City', '0456321987', 'tuan@email.com', '2022-09-30', 'New Customer', 3),
+('CUS007', 'Nguyen Thi Huong', 'GC001', '321 Le Dai Hanh Street, District 11, Ho Chi Minh City', '0123654987', 'huong@email.com', '2020-03-20', 'Loyal Customer', 3),
+('CUS008', 'Tran Quoc Bao', 'GC002', '23 Vo Van Tan Street, District 3, Ho Chi Minh City', '0987321654', 'bao@email.com', '2023-01-15', 'New Customer', 3),
+('CUS009', 'Le Thi Ngoc', 'GC001', '753 Truong Chinh Street, Tan Binh District, Ho Chi Minh City', '0123789456', 'ngoc@email.com', '2022-06-30', 'Loyal Customer', 3),
+('CUS010', 'Nguyen Cong Phuong', 'GC002', '258 Le Van Sy Street, Phu Nhuan District, Ho Chi Minh City', '0987654321', 'phuong@email.com', '2021-11-01', 'New Customer', 3),
+('CUS011', 'Nguyen Thi Lan', 'GC001', '123 Le Loi Street, District 1, Ho Chi Minh City', '0123456789', 'lan@email.com', '2022-03-01', 'Loyal customer', 3),
+('CUS012', 'Tran Van Dung', 'GC002', '12 Tay Thanh, Tan Phu District, Ho Chi Minh City', '0987654321', 'dung@email.com', '2023-01-15', 'New customer', 3),
+('CUS013', 'Minh Hoang Company', 'GC003', '789 Tran Hung Dao Street, District 5, Ho Chi Minh City', '0456789123', 'info@minhhoangcompany.com', '2022-06-30', 'Corporate customer', 3),
+('CUS014', 'Bacon Ino Company', 'GC003', '52 Nguyen Tri Phuong Street, District 5, Ho Chi Minh City', '0456789123', 'info@BaconInocompany.com', '2022-06-30', 'Corporate customer', 3);
+
+-- Data for Staff
+INSERT INTO Staff (Id, Name, Phone, Birthday, Address, IdUserRole, StartDate) VALUES
+('STAFF001', N'Nguyen Kien An', '0123456789', '1980-01-01', N'123 Le Loi Street, District 1, Ho Chi Minh', 2, '2018-01-01'),
+('STAFF002', N'Vo Tan Huy', '0987654321', '1990-05-15', N'193 Nguyen Kiem, Go Vap District, Ho Chi Minh', 1, '2020-03-01'),
+('STAFF003', N'Nguyen Chiu', '0456789123', '1985-11-30', N'789 Tran Hung Dao Street, District 5, Ho Chi Minh City', 2, '2019-09-01');
+
+-- Data for SetObject
+INSERT INTO SetObject (DisplayName)VALUES
+(N'Shirt'),(N'Pants'),(N'Skirt'),(N'Dresses');
+
+-- Data for Object (with unique Ids)
+INSERT INTO [Object] (Id, DisplayName, IdSet, IdUnit, IdSupplier, InputPrice)
+VALUES
+('V1_001', N'Office skirt', 3, 1, 3, 215000),
+('AK1_001', N'Men style shirt', 1, 2, 3, 200000),
+('AK1_002', N'Women style shirt', 1, 1, 3, 200000),
+('V2_001', N'Vest style', 1, 2, 3, 650000),
+('V2_002', N'Regular vest', 1, 2, 3, 600000),
+('AT1_001', N'Plain T-shirt', 1, 3, 2, 195000),
+('AT2_001', N'Plain T-shirt with mixed colors', 1, 3, 2, 195000),
+('AC1_001', N'Plain croptop', 1, 3, 2, 190000),
+('AC2_001', N'Basic croptop', 1, 3, 2, 180000),
+('D1_001', N'Party dress', 1, 1, 2, 650000),
+('D2_001', N'Luxury dress set', 4, 2, 4, 520000),
+('D3_001', N'Long rose dress', 4, 2, 4, 480000),
+('Q1_001', N'Wide-leg pants with waistband high', 2, 3, 2, 200000),
+('AT3_001', N'STYLIZED PLAIN T-SHIRT', 1, 3, 1, 180000),
+('AT4_001', N'LONG-SLEEVED T-SHIRT', 1, 3, 1, 185000),
+('Q2_001', N'WIDE LEG KHAKI PANTS', 2, 3, 2, 220000);
+
+--Input
+INSERT INTO Input (Id, Quantity, Total, Type, BarCode, DateInput) VALUES
+('IN001', 100, 20000000, 'Import', 'BR001', '2024-12-01'),
+('IN002', 50, 10000000, 'Restock', 'BR002', '2024-12-10'),
+('IN003', 70, 15000000, 'Import', 'BR003', '2025-01-15'),
+('IN004', 30, 6000000, 'Sample', 'BR004', '2025-02-01'),
+('IN005', 90, 18000000, 'Import', 'BR005', '2025-03-01');
+
+--InputInfo
+INSERT INTO InputInfor (Id, IdInput, IdObject, Quantity, InputPrice, OutputPrice) VALUES
+('ININFO001', 'IN001', 'AT1_001', 20, 195000, 250000), 
+('ININFO002', 'IN002', 'AC1_001', 10, 190000, 230000), 
+('ININFO003', 'IN003', 'D1_001', 15, 650000, 850000), 
+('ININFO004', 'IN004', 'V1_001', 5, 215000, 300000), 
+('ININFO005', 'IN005', 'Q1_001', 40, 200000, 270000); 
+
+--Sale
+INSERT INTO Sale (Id, DisplayName, TypeSale, StartDate, EndDate) VALUES
+('S001', 'Summer Sale', 'Seasonal', '2024-06-01', '2024-06-30'),
+('S002', 'Loyalty Discount', 'CustomerGroup', '2024-07-01', '2024-12-31'),
+('S003', 'New Year Offer', 'Event', '2025-01-01', '2025-01-10'),
+('S004', 'Black Friday', 'Event', '2024-11-25', '2024-11-30');
+
+--SaleDetail
+INSERT INTO Sale_Detail (IdSale, Discount, ConditionValue, Description) VALUES
+('S001', 10, 500000, '10% off on orders over 500K'),
+('S002', 15, 1000000, '15% for loyal customers over 1M'),
+('S003', 20, NULL, 'Flat 20% discount'),
+('S004', 30, 1500000, '30% off on Black Friday');
+
+--Output
+INSERT INTO Output (Id, IdCustomer, IdSale_Output, DateOutput, Total, Type, Status) VALUES
+('OUT001', 'CUS001', NULL, '2025-01-02', 1500000, 'Online', 'Completed'),
+('OUT002', 'CUS002', NULL, '2025-01-05', 2200000, 'In-store', 'Completed'),
+('OUT003', 'CUS003', NULL, '2025-02-01', 5000000, 'Corporate', 'Pending'),
+('OUT004', 'CUS004', NULL, '2025-02-15', 950000, 'Online', 'Completed');
+
+--Sale_Output – Liên kết Sale với Output
+INSERT INTO Sale_Output (Id, IdSale, IdOutput, DiscountValue) VALUES
+('SO001', 'S001', 'OUT001', 150000),
+('SO002', 'S002', 'OUT002', 330000),
+('SO003', 'S003', 'OUT003', 1000000),
+('SO004', 'S001', 'OUT004', 95000);
+
+-- Cập nhật bảng Output để liên kết với Sale_Output
+UPDATE Output
+SET IdSale_Output = 'SO001'
+WHERE Id = 'OUT001';
+
+UPDATE Output
+SET IdSale_Output = 'SO002'
+WHERE Id = 'OUT002';
+
+UPDATE Output
+SET IdSale_Output = 'SO003'
+WHERE Id = 'OUT003';
+
+UPDATE Output
+SET IdSale_Output = 'SO004'
+WHERE Id = 'OUT004';
+
+-- OutputInfor – Chi tiết xuất hàng
+INSERT INTO OutputInfor (Id, IdObject, IdInputInfor, IdCustomer, IdSale_OutputInfor, Quantity, InputPrice) VALUES
+('OUTINFO001', 'AT1_001', 'ININFO001', 'CUS001', NULL, 3, 195000),
+('OUTINFO002', 'AC1_001', 'ININFO002', 'CUS002', NULL, 2, 190000),
+('OUTINFO003', 'D1_001', 'ININFO003', 'CUS003', NULL, 5, 650000),
+('OUTINFO004', 'Q1_001', 'ININFO005', 'CUS004', NULL, 4, 200000);
+
+--Sale_OutputInfor – Khuyến mãi chi tiết trên từng sản phẩm
+INSERT INTO Sale_OutputInfor (Id, IdSale, IdOutputInfor, DiscountValue) VALUES
+('SOINFO001', 'S001', 'OUTINFO001', 60000),
+('SOINFO002', 'S002', 'OUTINFO002', 50000),
+('SOINFO003', 'S003', 'OUTINFO003', 650000),
+('SOINFO004', 'S001', 'OUTINFO004', 80000);
+
+-- Cập nhật bảng OutputInfor để liên kết với Sale_OutputInfor
+UPDATE OutputInfor
+SET IdSale_OutputInfor = 'SOINFO001'
+WHERE Id = 'OUTINFO001';
+
+UPDATE OutputInfor
+SET IdSale_OutputInfor = 'SOINFO002'
+WHERE Id = 'OUTINFO002';
+
+UPDATE OutputInfor
+SET IdSale_OutputInfor = 'SOINFO003'
+WHERE Id = 'OUTINFO003';
+
+UPDATE OutputInfor
+SET IdSale_OutputInfor = 'SOINFO004'
+WHERE Id = 'OUTINFO004';
