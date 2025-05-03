@@ -74,14 +74,14 @@
             this.khoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(186, 556);
+            this.menuStrip1.Size = new System.Drawing.Size(117, 556);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(104, 26);
             this.homeToolStripMenuItem.Text = "Home";
             // 
             // kháchHàngToolStripMenuItem
@@ -90,7 +90,7 @@
             this.dataToolStripMenuItem,
             this.groupToolStripMenuItem});
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(104, 26);
             this.kháchHàngToolStripMenuItem.Text = "Customer";
             // 
             // dataToolStripMenuItem
@@ -108,7 +108,7 @@
             // khoToolStripMenuItem
             // 
             this.khoToolStripMenuItem.Name = "khoToolStripMenuItem";
-            this.khoToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.khoToolStripMenuItem.Size = new System.Drawing.Size(104, 26);
             this.khoToolStripMenuItem.Text = "Kho ";
             // 
             // dataGridView_Customer
@@ -132,14 +132,14 @@
             this.dataGridView_Customer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView_Customer.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView_Customer.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView_Customer.Location = new System.Drawing.Point(186, 0);
+            this.dataGridView_Customer.Location = new System.Drawing.Point(117, 0);
             this.dataGridView_Customer.Margin = new System.Windows.Forms.Padding(4, 3, 5, 3);
             this.dataGridView_Customer.Name = "dataGridView_Customer";
             this.dataGridView_Customer.RowHeadersVisible = false;
             this.dataGridView_Customer.RowHeadersWidth = 62;
             this.dataGridView_Customer.RowTemplate.Height = 28;
             this.dataGridView_Customer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_Customer.Size = new System.Drawing.Size(1277, 228);
+            this.dataGridView_Customer.Size = new System.Drawing.Size(1346, 228);
             this.dataGridView_Customer.TabIndex = 2;
             // 
             // tvFind

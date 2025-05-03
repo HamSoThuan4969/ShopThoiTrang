@@ -30,24 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admincs));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lb_employee = new System.Windows.Forms.Button();
-            this.lb_bill = new System.Windows.Forms.Button();
-            this.lb_cus = new System.Windows.Forms.Button();
-            this.lb_kho = new System.Windows.Forms.Button();
-            this.lb_sp = new System.Windows.Forms.Button();
             this.lb_out = new System.Windows.Forms.Button();
+            this.lb_sp = new System.Windows.Forms.Button();
+            this.lb_kho = new System.Windows.Forms.Button();
+            this.lb_cus = new System.Windows.Forms.Button();
+            this.lb_bill = new System.Windows.Forms.Button();
+            this.lb_employee = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,96 +69,6 @@
             this.panel1.Size = new System.Drawing.Size(194, 808);
             this.panel1.TabIndex = 0;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.LightGray;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(194, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1063, 37);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(44, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 103);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(57, 118);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 34);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Admin";
-            // 
-            // lb_employee
-            // 
-            this.lb_employee.BackColor = System.Drawing.Color.SaddleBrown;
-            this.lb_employee.Font = new System.Drawing.Font(".VnVogue", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_employee.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lb_employee.Location = new System.Drawing.Point(12, 183);
-            this.lb_employee.Name = "lb_employee";
-            this.lb_employee.Size = new System.Drawing.Size(171, 56);
-            this.lb_employee.TabIndex = 2;
-            this.lb_employee.Text = "Employee";
-            this.lb_employee.UseVisualStyleBackColor = false;
-            // 
-            // lb_bill
-            // 
-            this.lb_bill.BackColor = System.Drawing.Color.SaddleBrown;
-            this.lb_bill.Font = new System.Drawing.Font(".VnVogue", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_bill.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lb_bill.Location = new System.Drawing.Point(12, 400);
-            this.lb_bill.Name = "lb_bill";
-            this.lb_bill.Size = new System.Drawing.Size(171, 56);
-            this.lb_bill.TabIndex = 3;
-            this.lb_bill.Text = "Bill";
-            this.lb_bill.UseVisualStyleBackColor = false;
-            // 
-            // lb_cus
-            // 
-            this.lb_cus.BackColor = System.Drawing.Color.SaddleBrown;
-            this.lb_cus.Font = new System.Drawing.Font(".VnVogue", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cus.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lb_cus.Location = new System.Drawing.Point(12, 290);
-            this.lb_cus.Name = "lb_cus";
-            this.lb_cus.Size = new System.Drawing.Size(171, 56);
-            this.lb_cus.TabIndex = 4;
-            this.lb_cus.Text = "Customer";
-            this.lb_cus.UseVisualStyleBackColor = false;
-            // 
-            // lb_kho
-            // 
-            this.lb_kho.BackColor = System.Drawing.Color.SaddleBrown;
-            this.lb_kho.Font = new System.Drawing.Font(".VnVogue", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_kho.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lb_kho.Location = new System.Drawing.Point(12, 507);
-            this.lb_kho.Name = "lb_kho";
-            this.lb_kho.Size = new System.Drawing.Size(171, 56);
-            this.lb_kho.TabIndex = 5;
-            this.lb_kho.Text = "Warehouse";
-            this.lb_kho.UseVisualStyleBackColor = false;
-            // 
-            // lb_sp
-            // 
-            this.lb_sp.BackColor = System.Drawing.Color.SaddleBrown;
-            this.lb_sp.Font = new System.Drawing.Font(".VnVogue", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_sp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lb_sp.Location = new System.Drawing.Point(12, 616);
-            this.lb_sp.Name = "lb_sp";
-            this.lb_sp.Size = new System.Drawing.Size(171, 56);
-            this.lb_sp.TabIndex = 6;
-            this.lb_sp.Text = "Product";
-            this.lb_sp.UseVisualStyleBackColor = false;
-            // 
             // lb_out
             // 
             this.lb_out.BackColor = System.Drawing.Color.SaddleBrown;
@@ -168,6 +80,96 @@
             this.lb_out.TabIndex = 7;
             this.lb_out.Text = "Log out";
             this.lb_out.UseVisualStyleBackColor = false;
+            // 
+            // lb_sp
+            // 
+            this.lb_sp.BackColor = System.Drawing.Color.SaddleBrown;
+            this.lb_sp.Font = new System.Drawing.Font(".VnVogue", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_sp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lb_sp.Location = new System.Drawing.Point(12, 603);
+            this.lb_sp.Name = "lb_sp";
+            this.lb_sp.Size = new System.Drawing.Size(171, 56);
+            this.lb_sp.TabIndex = 6;
+            this.lb_sp.Text = "Product";
+            this.lb_sp.UseVisualStyleBackColor = false;
+            // 
+            // lb_kho
+            // 
+            this.lb_kho.BackColor = System.Drawing.Color.SaddleBrown;
+            this.lb_kho.Font = new System.Drawing.Font(".VnVogue", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_kho.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lb_kho.Location = new System.Drawing.Point(12, 502);
+            this.lb_kho.Name = "lb_kho";
+            this.lb_kho.Size = new System.Drawing.Size(171, 56);
+            this.lb_kho.TabIndex = 5;
+            this.lb_kho.Text = "Warehouse";
+            this.lb_kho.UseVisualStyleBackColor = false;
+            // 
+            // lb_cus
+            // 
+            this.lb_cus.BackColor = System.Drawing.Color.SaddleBrown;
+            this.lb_cus.Font = new System.Drawing.Font(".VnVogue", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_cus.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lb_cus.Location = new System.Drawing.Point(12, 276);
+            this.lb_cus.Name = "lb_cus";
+            this.lb_cus.Size = new System.Drawing.Size(171, 56);
+            this.lb_cus.TabIndex = 4;
+            this.lb_cus.Text = "Customer";
+            this.lb_cus.UseVisualStyleBackColor = false;
+            // 
+            // lb_bill
+            // 
+            this.lb_bill.BackColor = System.Drawing.Color.SaddleBrown;
+            this.lb_bill.Font = new System.Drawing.Font(".VnVogue", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_bill.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lb_bill.Location = new System.Drawing.Point(12, 388);
+            this.lb_bill.Name = "lb_bill";
+            this.lb_bill.Size = new System.Drawing.Size(171, 56);
+            this.lb_bill.TabIndex = 3;
+            this.lb_bill.Text = "Bill";
+            this.lb_bill.UseVisualStyleBackColor = false;
+            // 
+            // lb_employee
+            // 
+            this.lb_employee.BackColor = System.Drawing.Color.SaddleBrown;
+            this.lb_employee.Font = new System.Drawing.Font(".VnVogue", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_employee.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lb_employee.Location = new System.Drawing.Point(12, 171);
+            this.lb_employee.Name = "lb_employee";
+            this.lb_employee.Size = new System.Drawing.Size(171, 56);
+            this.lb_employee.TabIndex = 2;
+            this.lb_employee.Text = "Employee";
+            this.lb_employee.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(49, 106);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 34);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Admin";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(44, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(105, 103);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Ivory;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(194, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1070, 37);
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // button1
             // 
@@ -235,12 +237,24 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(194, 425);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(1070, 383);
+            this.dataGridView1.TabIndex = 8;
+            // 
             // Admincs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1257, 808);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(1264, 808);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button4);
@@ -256,6 +270,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,5 +294,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
