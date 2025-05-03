@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|solutionrelative:gui\\admincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|d:\\sepho\\shopthoitrang\\myapp\\gui\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|solutionrelative:gui\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|d:\\sepho\\shopthoitrang\\myapp\\gui\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|solutionrelative:gui\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|D:\\sepho\\ShopThoiTrang\\MyApp\\gui\\fmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0AD2E2A6-28A4-470B-BCCB-173577ECA2BD}|GUI\\GUI.csproj|solutionrelative:gui\\fmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -82,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,6 +114,30 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Customer.cs [Design]",
+              "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\Customer.cs",
+              "RelativeDocumentMoniker": "GUI\\Customer.cs",
+              "ToolTip": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\Customer.cs [Design]",
+              "RelativeToolTip": "GUI\\Customer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T03:37:41.222Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Employee.cs [Design]",
+              "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\Employee.cs",
+              "RelativeDocumentMoniker": "GUI\\Employee.cs",
+              "ToolTip": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\Employee.cs [Design]",
+              "RelativeToolTip": "GUI\\Employee.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T03:23:50.005Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Admincs.cs [Design]",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\Admincs.cs",
@@ -118,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Createcs.cs [Design]",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\Createcs.cs",
               "RelativeDocumentMoniker": "GUI\\Createcs.cs",
@@ -129,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\Login.cs",
               "RelativeDocumentMoniker": "GUI\\Login.cs",
@@ -140,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Homecs.cs [Design]",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\Homecs.cs",
               "RelativeDocumentMoniker": "GUI\\Homecs.cs",
@@ -151,18 +183,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "fManager.cs [Design]",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\fManager.cs",
               "RelativeDocumentMoniker": "GUI\\fManager.cs",
               "ToolTip": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\fManager.cs [Design]",
               "RelativeToolTip": "GUI\\fManager.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T22:12:50.309Z"
+              "WhenOpened": "2025-04-15T22:12:50.309Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "fManager.cs",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\fManager.cs",
               "RelativeDocumentMoniker": "GUI\\fManager.cs",
@@ -170,11 +203,12 @@
               "RelativeToolTip": "GUI\\fManager.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAUwGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T22:38:26.205Z"
+              "WhenOpened": "2025-04-15T22:38:26.205Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "GroupCustomerDTO.cs",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\DTO\\GroupCustomerDTO.cs",
               "RelativeDocumentMoniker": "DTO\\GroupCustomerDTO.cs",
@@ -186,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "CustomerBLL.cs",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\BLL\\CustomerBLL.cs",
               "RelativeDocumentMoniker": "BLL\\CustomerBLL.cs",
@@ -198,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Database.cs",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\DAL\\Database.cs",
               "RelativeDocumentMoniker": "DAL\\Database.cs",
@@ -210,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "OutputInforDTO.cs",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\DTO\\OutputInforDTO.cs",
               "RelativeDocumentMoniker": "DTO\\OutputInforDTO.cs",
@@ -222,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SaleOutpuntDTO.cs",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\DTO\\SaleOutpuntDTO.cs",
               "RelativeDocumentMoniker": "DTO\\SaleOutpuntDTO.cs",
@@ -234,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "UsersDAL.cs",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\DAL\\UsersDAL.cs",
               "RelativeDocumentMoniker": "DAL\\UsersDAL.cs",
@@ -246,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "BaseDAL.cs",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\DAL\\BaseDAL.cs",
               "RelativeDocumentMoniker": "DAL\\BaseDAL.cs",
@@ -258,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "FormMains.cs",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\FormMains.cs",
               "RelativeDocumentMoniker": "GUI\\FormMains.cs",
@@ -270,18 +304,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "fManager.resx",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\fManager.resx",
               "RelativeDocumentMoniker": "GUI\\fManager.resx",
               "ToolTip": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\fManager.resx",
               "RelativeToolTip": "GUI\\fManager.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-19T08:51:01.4Z"
+              "WhenOpened": "2025-04-19T08:51:01.4Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\Program.cs",
               "RelativeDocumentMoniker": "GUI\\Program.cs",
@@ -293,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "fAddUsersGUI.cs [Design]",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\fAddUsersGUI.cs",
               "RelativeDocumentMoniker": "GUI\\fAddUsersGUI.cs",
@@ -304,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "fAddUsersGUI.cs",
               "DocumentMoniker": "D:\\sepho\\ShopThoiTrang\\MyApp\\GUI\\fAddUsersGUI.cs",
               "RelativeDocumentMoniker": "GUI\\fAddUsersGUI.cs",
