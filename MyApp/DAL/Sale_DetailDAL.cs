@@ -25,11 +25,12 @@ namespace DAL
         // thêm chi tiết Sale_Detail
         public void AddSale_Detail(Sale_DetailDTO saleDetail)
         {
-            string query = "INSERT INTO Sale_Detail (Id, IdSale, Discount, ConditionValue) VALUES (@Id, @IdSale, @Discount, @ConditionValue, @Description)";
+            string query = "INSERT INTO Sale_Detail (Id, IdSale, TypeSale, Discount, ConditionValue, Description) VALUES (@Id, @IdSale, @TypeSale, @Discount, @ConditionValue, @Description)";
             object[] parameters = new object[]
             {
                 saleDetail.Id,
                 saleDetail.IdSale,
+                saleDetail.TypeSale,
                 saleDetail.Discount,
                 saleDetail.ConditionValue,
                 saleDetail.Description,
@@ -48,6 +49,7 @@ namespace DAL
             {
                 command.Parameters.AddWithValue("@Id", saleDetail.Id);
                 command.Parameters.AddWithValue("@IdSale", saleDetail.IdSale);
+                command.Parameters.AddWithValue("@TypeSale", saleDetail.TypeSale);
                 command.Parameters.AddWithValue("@Discount", saleDetail.Discount);
                 command.Parameters.AddWithValue("@ConditionValue", saleDetail.ConditionValue);
                 command.Parameters.AddWithValue("@Description", saleDetail.Description);

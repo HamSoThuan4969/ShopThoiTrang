@@ -142,6 +142,12 @@
     <Compile Include="userControl\control_Sale.Designer.cs">
       <DependentUpon>control_Sale.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControl\Demo1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\Demo1.Designer.cs">
+      <DependentUpon>Demo1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="fAddUsersGUI.resx">
       <DependentUpon>fAddUsersGUI.cs</DependentUpon>
     </EmbeddedResource>

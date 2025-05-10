@@ -24,6 +24,7 @@ namespace GUI.userControl
             LoadSale_Detail(); // gọi hàm lấy danh sách Sale_Detail lên form
             AddCheckboxColumn(); // thêm cột checkbox vào DataGridView
             dataGridView_Sale.CellClick += DataGridView_Sale_CellClick;
+            InitializeComboBox(); // khởi tạo ComboBox
 
         }
         private void LoadSaleList()
@@ -57,6 +58,18 @@ namespace GUI.userControl
                 HeaderText = "Chọn",
                 Width = 50
             };
+            dataGridView_Sale.Columns.Insert(0, checkboxColumn);
+        }
+        private void InitializeComboBox()
+        {
+            // Gán danh sách giá trị cho ComboBox
+            cbbTypeSale.Items.Add("Event");
+            cbbTypeSale.Items.Add("ComboSet");
+            cbbTypeSale.Items.Add("Bill");
+            cbbTypeSale.Items.Add("Other");
+
+            // Đặt mục mặc định
+            cbbTypeSale.SelectedIndex = 0; // Chọn mục đầu tiên
         }
         private void DataGridView_Sale_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -86,10 +99,12 @@ namespace GUI.userControl
         {
             try
             {
+                
+                
                 // Tạo đối tượng Sale
                 SaleDTO sale = new SaleDTO
                 {
-                    Id = tbIdSale.Text.Trim(),
+                    
                     DisplayName = tbDisplayName.Text.Trim(),
                     TypeSale = cbbTypeSale.SelectedItem.ToString(),
                     StartDate =dtStartDate.Value,
@@ -99,7 +114,7 @@ namespace GUI.userControl
                 // Tạo đối tượng Sale_Detail
                 Sale_DetailDTO saleDetail = new Sale_DetailDTO
                 {
-                    IdSale = tbIdSale_Detail.Text.Trim(), // Liên kết với Sale.Id
+                    
                     Discount = tbDiscount.Text.Trim(),
                     ConditionValue = tbConditionValue.Text.Trim(),
                     Description = tbDescription.Text.Trim()
@@ -107,10 +122,10 @@ namespace GUI.userControl
                 };
 
                 // Gọi BLL để thêm dữ liệu
-                saleBLL.AddSale(sale);
-                sale_DetailBLL.AddSale_Detail(saleDetail);
+                saleBLL.AddSaleAndSaleDetail(sale, saleDetail);
 
-                MessageBox.Show("Thêm Sale thành công!");
+
+                MessageBox.Show("Thêm Sale và Sale_Detail thành công!");
                 LoadSaleList(); // Tải lại danh sách sau khi thêm
             }
             catch (Exception ex)
@@ -121,7 +136,24 @@ namespace GUI.userControl
 
         private void btDelete_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (dataGridView_Sale.SelectedRows.Count > 0)
+                {
+                    string idSale = dataGridView_Sale.SelectedRows[0].Cells["Id"].Value?.ToString();
+                    saleBLL.DeleteSaleWithDetails(idSale);
+                    MessageBox.Show("Xóa Sale và Sale_Detail thành công!");
+                    LoadSaleList();
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng chọn một Sale để xóa.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi xóa Sale: {ex.Message}");
+            }
         }
 
         private void btUpdate_Click(object sender, EventArgs e)

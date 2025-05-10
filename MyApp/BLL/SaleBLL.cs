@@ -5,20 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTO;
+using System.Security.Cryptography.X509Certificates;
+using System.Data.Common;
+using System.Transactions; // Import TransactionScope
 
 namespace BLL
 {
     public class SaleBLL : BaseBLL<SaleDTO>
     {
         private SaleDAL saleDAL = new SaleDAL();
-
+        private Sale_DetailDAL saleDetailDAL = new Sale_DetailDAL();
         // lấy thông tin bằng Id
         public SaleDTO GetSaleByIdBLL(string idSale)
         {
             return saleDAL.GetSaleById(idSale);
         }
 
-        // xem 
+        // xem toàn bộ danh sách 
         public List<SaleDTO> GetAllSale()
         {
             return saleDAL.GetAllSale();
@@ -33,6 +36,8 @@ namespace BLL
                 {
                     saleDTO.Id = GenerateAutoId("Sale", "Id", "Sale");
                 }
+                
+                
                 // gọi hàm DAl để thêm dữ liệu về sale
                 saleDAL.AddSale(saleDTO);
 
@@ -43,7 +48,91 @@ namespace BLL
                 throw new Exception("Lỗi khi sinh mã tự động: " + ex.Message);
             }
         }
+        // thêm sale và sale_detail đồng thời- ap dụng Transaction 
+        public void AddSaleAndSaleDetail(SaleDTO saleDTO, Sale_DetailDTO saleDetailDTO)
+        {
+            try
+            {
+                // Sinh Id tự động cho Sale
+                if (string.IsNullOrEmpty(saleDTO.Id))
+                {
+                    saleDTO.Id = GenerateAutoId("Sale", "Id", "SAL");
+                }
 
+                // Sinh Id tự động cho Sale_Detail và gán IdSale
+                if (saleDetailDTO != null)
+                {
+                    if (string.IsNullOrEmpty(saleDetailDTO.Id))
+                    {
+                        saleDetailDTO.Id = GenerateAutoId("Sale_Detail", "Id", "SDT");
+                    }
+
+                    saleDetailDTO.IdSale = saleDTO.Id; // Gán Id của Sale cho Sale_Detail
+                }
+
+                // Sử dụng Transaction để đảm bảo tính toàn vẹn dữ liệu
+                using (var transaction = new TransactionScope())
+                {
+                    // Thêm Sale
+                    saleDAL.AddSale(saleDTO);
+                    saleDetailDTO.TypeSale = saleDTO.TypeSale; // Gán TypeSale từ SaleDTO sang Sale_DetailDTO
+
+                    // Thêm Sale_Detail (nếu có)
+                    if (saleDetailDTO != null)
+                    {
+                        saleDetailDAL.AddSale_Detail(saleDetailDTO);
+                    }
+
+                    transaction.Complete(); // Commit transaction
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi thêm Sale và Sale_Detail: " + ex.Message);
+            }
+        }
+        // Xóa Sale và các Sale_Detail liên quan
+        public void DeleteSaleWithDetails(string saleId)
+        {
+            try
+            {
+                using (var transaction = new TransactionScope())
+                {
+                    // Xóa Sale_Detail liên quan trước
+                    saleDetailDAL.DeleteByIds("Sale_Detail", "IdSale", new List<string> { saleId});
+
+                    // Xóa Sale
+                    saleDAL.DeleteByIds("Sale", "Id", new List<string> { saleId });
+
+                    transaction.Complete(); // Commit transaction
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi xóa Sale: " + ex.Message);
+            }
+        }
+        // update sale và Sale_Detail đồng thời 
+        public void UpdateSaleWithDetails(SaleDTO saleDTO, Sale_DetailDTO saleDetailDTO)
+        {
+            try
+            {
+                using (var transaction = new TransactionScope())
+                {
+                    // Cập nhật Sale
+                    saleDAL.UpdateSale(new List<SaleDTO> { saleDTO });
+
+                    // Cập nhật Sale_Detail
+                    saleDetailDAL.UpdateSale_Detail(new List<Sale_DetailDTO> { saleDetailDTO });
+
+                    transaction.Complete(); // Commit transaction
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi cập nhật Sale và Sale_Detail: " + ex.Message);
+            }
+        }
         // xóa
         public void DeleteSale(List<string> ids)
         {
@@ -95,6 +184,8 @@ namespace BLL
         {
             try
             {
+                // sinh Id tự động 
+               
                 if (string.IsNullOrEmpty(saleDetail.Id))
                 {
                     saleDetail.Id = GenerateAutoId("Sale_Detail", "Id", "SDT");

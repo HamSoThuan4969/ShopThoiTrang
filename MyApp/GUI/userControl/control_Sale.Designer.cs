@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pnSale_Detail = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -139,9 +139,9 @@
             // 
             // tbDiscount
             // 
-            this.tbDiscount.Location = new System.Drawing.Point(112, 316);
+            this.tbDiscount.Location = new System.Drawing.Point(142, 316);
             this.tbDiscount.Name = "tbDiscount";
-            this.tbDiscount.Size = new System.Drawing.Size(336, 26);
+            this.tbDiscount.Size = new System.Drawing.Size(161, 26);
             this.tbDiscount.TabIndex = 22;
             // 
             // dtEndDate
@@ -175,11 +175,6 @@
             // cbbTypeSale
             // 
             this.cbbTypeSale.FormattingEnabled = true;
-            this.cbbTypeSale.Items.AddRange(new object[] {
-            "GroupCustomer",
-            "Bill",
-            "Event",
-            "ComboSet"});
             this.cbbTypeSale.Location = new System.Drawing.Point(142, 257);
             this.cbbTypeSale.Name = "cbbTypeSale";
             this.cbbTypeSale.Size = new System.Drawing.Size(121, 28);
@@ -222,7 +217,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(242, 146);
+            this.label2.Location = new System.Drawing.Point(229, 118);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 20);
             this.label2.TabIndex = 3;
@@ -230,7 +225,7 @@
             // 
             // tbIdSale_Detail
             // 
-            this.tbIdSale_Detail.Location = new System.Drawing.Point(327, 146);
+            this.tbIdSale_Detail.Location = new System.Drawing.Point(239, 141);
             this.tbIdSale_Detail.Name = "tbIdSale_Detail";
             this.tbIdSale_Detail.ReadOnly = true;
             this.tbIdSale_Detail.Size = new System.Drawing.Size(95, 26);
@@ -250,7 +245,7 @@
             this.tbIdSale.Location = new System.Drawing.Point(90, 137);
             this.tbIdSale.Name = "tbIdSale";
             this.tbIdSale.ReadOnly = true;
-            this.tbIdSale.Size = new System.Drawing.Size(56, 26);
+            this.tbIdSale.Size = new System.Drawing.Size(89, 26);
             this.tbIdSale.TabIndex = 2;
             // 
             // panel1
@@ -318,11 +313,11 @@
             // dataGridView_Sale
             // 
             this.dataGridView_Sale.AllowDrop = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dataGridView_Sale.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dataGridView_Sale.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView_Sale.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView_Sale.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView_Sale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
