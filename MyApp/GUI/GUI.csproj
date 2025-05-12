@@ -168,6 +168,18 @@
     <Compile Include="userControl\Demo1.Designer.cs">
       <DependentUpon>Demo1.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControl\fInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\fInput.Designer.cs">
+      <DependentUpon>fInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\fInput_Infor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\fInput_Infor.Designer.cs">
+      <DependentUpon>fInput_Infor.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="fAddUsersGUI.resx">
       <DependentUpon>fAddUsersGUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +227,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userControl\control_Sale.resx">
       <DependentUpon>control_Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControl\fInput.resx">
+      <DependentUpon>fInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControl\fInput_Infor.resx">
+      <DependentUpon>fInput_Infor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

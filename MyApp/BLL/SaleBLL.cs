@@ -34,7 +34,7 @@ namespace BLL
                 // sinh id tự động 
                 if(string.IsNullOrEmpty(saleDTO.Id))
                 {
-                    saleDTO.Id = GenerateAutoId("Sale", "Id", "Sale");
+                    saleDTO.Id = GenerateAutoId("Sale", "Id", "SALE");
                 }
                 
                 
@@ -56,7 +56,7 @@ namespace BLL
                 // Sinh Id tự động cho Sale
                 if (string.IsNullOrEmpty(saleDTO.Id))
                 {
-                    saleDTO.Id = GenerateAutoId("Sale", "Id", "SAL");
+                    saleDTO.Id = GenerateAutoId("Sale", "Id", "SALE");
                 }
 
                 // Sinh Id tự động cho Sale_Detail và gán IdSale
@@ -122,8 +122,12 @@ namespace BLL
                     // Cập nhật Sale
                     saleDAL.UpdateSale(new List<SaleDTO> { saleDTO });
 
-                    // Cập nhật Sale_Detail
-                    saleDetailDAL.UpdateSale_Detail(new List<Sale_DetailDTO> { saleDetailDTO });
+                    // Cập nhật Sale_Detail (nếu có)
+                    if (saleDetailDTO != null)
+                    {
+                        saleDetailDAL.UpdateSale_Detail(new List<Sale_DetailDTO> { saleDetailDTO });
+                    }
+
 
                     transaction.Complete(); // Commit transaction
                 }

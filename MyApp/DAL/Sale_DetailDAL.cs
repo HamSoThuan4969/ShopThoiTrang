@@ -48,8 +48,8 @@ namespace DAL
             return Update("Sale_Detail", "Id",saleDetail, (command, saleDetail) =>
             {
                 command.Parameters.AddWithValue("@Id", saleDetail.Id);
-                command.Parameters.AddWithValue("@IdSale", saleDetail.IdSale);
-                command.Parameters.AddWithValue("@TypeSale", saleDetail.TypeSale);
+                command.Parameters.AddWithValue("@IdSale", saleDetail.IdSale ?? (object)DBNull.Value);
+                command.Parameters.AddWithValue("@TypeSale", saleDetail.TypeSale ?? (object)DBNull.Value);
                 command.Parameters.AddWithValue("@Discount", saleDetail.Discount);
                 command.Parameters.AddWithValue("@ConditionValue", saleDetail.ConditionValue);
                 command.Parameters.AddWithValue("@Description", saleDetail.Description);

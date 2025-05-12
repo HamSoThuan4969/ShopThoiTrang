@@ -48,7 +48,7 @@ namespace DAL
             {
                 command.Parameters.AddWithValue("@Id", sale.Id);
                 command.Parameters.AddWithValue("@DisplayName", sale.DisplayName);
-                command.Parameters.AddWithValue("@TypeSale", sale.TypeSale);
+                command.Parameters.AddWithValue("@TypeSale", sale.TypeSale ?? (object)DBNull.Value);// 
                 command.Parameters.AddWithValue("@StartDate", sale.StartDate);
                 command.Parameters.AddWithValue("@EndDate", sale.EndDate);
                 // Thêm các tham số khác nếu cần

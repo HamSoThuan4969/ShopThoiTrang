@@ -10,8 +10,8 @@ namespace DTO
     {
         public string Id { get; set; }
         public string IdInput { get; set; }
-        public string IdObject { get; set; }
         public int Quantity { get; set; }
+        public string DisplayName_Object { get; set; }
         public int InputPrice { get; set; }
         public int OutputPrice { get; set; }
     }

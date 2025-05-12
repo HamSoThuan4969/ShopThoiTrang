@@ -49,6 +49,8 @@
     <Compile Include="Database.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="GroupCustomerDAL.cs" />
+    <Compile Include="InputDAL.cs" />
+    <Compile Include="Input_InforDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestScheduleDAL.cs" />
     <Compile Include="SaleDAL.cs" />

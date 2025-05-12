@@ -91,7 +91,7 @@ namespace GUI.userControl
                 tbDiscount.Text = saleDetailDTO.Discount;
                 tbConditionValue.Text = saleDetailDTO.ConditionValue;
                 tbDescription.Text = saleDetailDTO.Description;
-                tbIdSale_Detail.Text = saleDetailDTO.IdSale;
+                tbIdSale_Detail.Text = saleDetailDTO.Id;
             }
         }
 
@@ -138,17 +138,31 @@ namespace GUI.userControl
         {
             try
             {
-                if (dataGridView_Sale.SelectedRows.Count > 0)
+                List<string> selectedIds = new List<string>();
+                foreach (DataGridViewRow row in dataGridView_Sale.Rows)
                 {
-                    string idSale = dataGridView_Sale.SelectedRows[0].Cells["Id"].Value?.ToString();
-                    saleBLL.DeleteSaleWithDetails(idSale);
-                    MessageBox.Show("Xóa Sale và Sale_Detail thành công!");
-                    LoadSaleList();
+                    // kiểm tra có tick vào checkbox
+                    if (Convert.ToBoolean(row.Cells["Select"].Value)==true)
+                    {
+                        string idSale = row.Cells["Id"].Value.ToString();
+                        selectedIds.Add(idSale);
+                    }
                 }
-                else
+                if(selectedIds.Count == 0)
                 {
-                    MessageBox.Show("Vui lòng chọn một Sale để xóa.");
+                    MessageBox.Show("Vui lòng chọn ít nhất một Sale để xóa.");
+                    return;
                 }
+
+                // Gọi BLL để xóa dữ liệu Sale và Sale_Detail
+                foreach (string id in selectedIds)
+                {
+                    saleBLL.DeleteSaleWithDetails(id);
+                    
+                }
+                MessageBox.Show("Xóa Sale và Sale_Detail thành công!");
+                LoadSaleList(); // Tải lại danh sách sau khi xóa
+
             }
             catch (Exception ex)
             {
@@ -158,12 +172,79 @@ namespace GUI.userControl
 
         private void btUpdate_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Lấy thông tin từ các TextBox
+                string idSale = tbIdSale.Text.Trim();
+                string displayName = tbDisplayName.Text.Trim();
+                string typeSale = cbbTypeSale.SelectedItem?.ToString(); // lấy giá trị của combox
+                DateTime startDate = dtStartDate.Value;
+                DateTime endDate = dtEndDate.Value;
 
+                string idSaleDetail = tbIdSale_Detail.Text.Trim();
+                string discount = tbDiscount.Text.Trim();
+                string conditionValue = tbConditionValue.Text.Trim();
+                string description = tbDescription.Text.Trim();
+
+                // Kiểm tra nếu IdSale hoặc IdSaleDetail rỗng
+                if (string.IsNullOrEmpty(idSale) || string.IsNullOrEmpty(idSaleDetail))
+                {
+                    MessageBox.Show("Vui lòng chọn một Sale để cập nhật.");
+                    return;
+                }
+
+                // Tạo đối tượng SaleDTO
+                SaleDTO sale = new SaleDTO
+                {
+                    Id = idSale,
+                    DisplayName = displayName,
+                    TypeSale = typeSale,
+                    StartDate = startDate,
+                    EndDate = endDate
+                };
+
+                // Tạo đối tượng Sale_DetailDTO
+                Sale_DetailDTO saleDetail = new Sale_DetailDTO
+                {
+                    Id = idSaleDetail,
+                    IdSale = idSale,
+                    TypeSale = typeSale,
+                    Discount = discount,
+                    ConditionValue = conditionValue,
+                    Description = description
+                };
+
+                // Gọi BLL để cập nhật dữ liệu
+                saleBLL.UpdateSaleWithDetails(sale, saleDetail);
+
+                MessageBox.Show("Cập nhật Sale và Sale_Detail thành công!");
+                LoadSaleList(); // Tải lại danh sách sau khi cập nhật
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi cập nhật Sale: {ex.Message}");
+            }
         }
 
         private void btClear_Click(object sender, EventArgs e)
         {
-
+            tbIdSale.Clear();
+            tbDisplayName.Clear();
+            cbbTypeSale.SelectedIndex = -1; // Đặt lại ComboBox
+            dtStartDate.Value = DateTime.Now; // Đặt lại ngày bắt đầu
+            dtEndDate.Value = DateTime.Now; // Đặt lại ngày kết thúc
+            tbDiscount.Clear();
+            tbConditionValue.Clear();
+            tbDescription.Clear();
+            tbIdSale_Detail.Clear();
+            // Xóa tất cả các checkbox đã chọn
+            foreach (DataGridViewRow row in dataGridView_Sale.Rows)
+            {
+                if (row.Cells["Select"] is DataGridViewCheckBoxCell checkBoxCell)
+                {
+                    checkBoxCell.Value = false; // Bỏ chọn checkbox
+                }
+            }
         }
 
         private void btExportExcel_Click(object sender, EventArgs e)

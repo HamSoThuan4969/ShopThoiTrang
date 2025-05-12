@@ -114,6 +114,14 @@ namespace GUI
             uc.Dock = DockStyle.Fill;                 // Căng full panel
             pnMain.Controls.Add(uc);
         }
+
+        private void nhậpKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnMain.Controls.Clear();              // Dọn panel
+            var uc = new fInput();          // Tạo UC mới
+            uc.Dock = DockStyle.Fill;                 // Căng full panel
+            pnMain.Controls.Add(uc);
+        }
     }   
     
 

@@ -44,8 +44,11 @@ namespace DAL
         {
             try
             {
+                // Chuẩn hóa prefix về in hoa
+                string upperPrefix = prefix.ToUpper();
+
                 // Tìm Id lớn nhất dựa trên tiền tố
-                string query = $"SELECT MAX({columnName}) FROM {tableName} WHERE {columnName} LIKE '{prefix}%'";
+                string query = $"SELECT MAX({columnName}) FROM {tableName} WHERE UPPER({columnName}) LIKE '{upperPrefix}%'";
                 object result = dataProvider.ExecuteSalar(query);
 
                 // trả về Id lớn nhất ( or null nếu là méo có Id )

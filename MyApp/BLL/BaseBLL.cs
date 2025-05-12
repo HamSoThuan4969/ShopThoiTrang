@@ -24,15 +24,19 @@ namespace BLL
                 {
                     return $"{prefix}001";
                 }
+                // ép MaxId và prefix về dạng In hoa để tiện sử lý so sánh và trùng trong csdl.
+                string upperMaxId = maxId.ToUpper();
+                string upperPrefix = prefix.ToUpper();
+
                 // Tách phần số từ Id lớn nhất 
-                string numberPart = maxId.Substring(prefix.Length);
+                string numberPart = upperMaxId.Substring(upperPrefix.Length);
                 if(!int.TryParse(numberPart, out int currentNumber))
                 {
                     throw new Exception("Không thể phân tích số của Id");
                 }
                 // tăng số của Id và tạo ra Id mới
                 int newNumber = currentNumber + 1;  
-                return $"{prefix}{newNumber:D3}";
+                return $"{upperPrefix}{newNumber:D3}";
             }catch(Exception ex)
             {
                 throw new Exception($"Lỗi khi tự động sinh Id cho bảng {tableName}: {ex.Message}");
