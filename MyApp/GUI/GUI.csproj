@@ -135,9 +135,6 @@
     <Compile Include="fManager.Designer.cs">
       <DependentUpon>fManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="tets1.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="UserControlAJob.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -156,11 +153,23 @@
     <Compile Include="userControl\control_GroupCustomer.Designer.cs">
       <DependentUpon>control_GroupCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControl\Control_InputValues.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\Control_InputValues.Designer.cs">
+      <DependentUpon>Control_InputValues.cs</DependentUpon>
+    </Compile>
     <Compile Include="userControl\control_Sale.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="userControl\control_Sale.Designer.cs">
       <DependentUpon>control_Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\Control_Supplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\Control_Supplier.Designer.cs">
+      <DependentUpon>Control_Supplier.cs</DependentUpon>
     </Compile>
     <Compile Include="userControl\Demo1.cs">
       <SubType>UserControl</SubType>
@@ -179,6 +188,18 @@
     </Compile>
     <Compile Include="userControl\fInput_Infor.Designer.cs">
       <DependentUpon>fInput_Infor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\fOutputInfor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\fOutputInfor.Designer.cs">
+      <DependentUpon>fOutputInfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\fOutput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\fOutput.Designer.cs">
+      <DependentUpon>fOutput.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="fAddUsersGUI.resx">
       <DependentUpon>fAddUsersGUI.cs</DependentUpon>
@@ -213,9 +234,6 @@
     <EmbeddedResource Include="fManager.resx">
       <DependentUpon>fManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tets1.resx">
-      <DependentUpon>tets1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControlAJob.resx">
       <DependentUpon>UserControlAJob.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,14 +243,26 @@
     <EmbeddedResource Include="userControl\control_GroupCustomer.resx">
       <DependentUpon>control_GroupCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userControl\Control_InputValues.resx">
+      <DependentUpon>Control_InputValues.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userControl\control_Sale.resx">
       <DependentUpon>control_Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControl\Control_Supplier.resx">
+      <DependentUpon>Control_Supplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControl\fInput.resx">
       <DependentUpon>fInput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControl\fInput_Infor.resx">
       <DependentUpon>fInput_Infor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControl\fOutputInfor.resx">
+      <DependentUpon>fOutputInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControl\fOutput.resx">
+      <DependentUpon>fOutput.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

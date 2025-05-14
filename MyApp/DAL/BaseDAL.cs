@@ -131,7 +131,65 @@ namespace DAL
             }
           
         }
-       
+
+
+        // Lấy dữ liệu lên cho Combobox 
+        public List<string> GetDistinctValues(string tableName, string columnName)
+        {
+            try
+            {
+                // Câu lệnh SQL lấy dữ liệu không trùng lặp
+                string query = $"SELECT DISTINCT {columnName} FROM {tableName}";
+                List<string> results = new List<string>();
+
+                using (var connection = GetConnection())
+                using (var command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            results.Add(reader[columnName].ToString());
+                        }
+                    }
+                }
+
+                return results;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Lỗi khi lấy dữ liệu không trùng lặp từ bảng {tableName}, cột {columnName}: {ex.Message}");
+            }
+        }
+        public object GetValueByCondition(string tableName, string conditionColumn, string conditionValue, string targetColumn)
+        {
+            object result = null;
+
+            string query = $"SELECT {targetColumn} FROM {tableName} WHERE {conditionColumn} = @value";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@value", conditionValue);
+
+                try
+                {
+                    conn.Open();
+                    result = cmd.ExecuteScalar(); // Lấy giá trị đầu tiên của cột đầu tiên
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Lỗi khi truy vấn dữ liệu: " + ex.Message);
+                }
+            }
+
+            return result;
+        }
+
+
+
+
     }
 
 }

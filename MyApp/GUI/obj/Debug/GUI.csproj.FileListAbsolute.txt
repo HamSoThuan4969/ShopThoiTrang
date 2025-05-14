@@ -19,7 +19,6 @@ C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\bin\Debug\DAL.pdb
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fAddUserGUI.resources
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fManager.resources
-C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\Test1.resources
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fCustomer.resources
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.fEmployee.resources
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\bin\Debug\EPPlus.dll
@@ -46,3 +45,7 @@ C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.UserControlAJob.resources
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.userControl.fInput_Infor.resources
 C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.userControl.fInput.resources
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.userControl.Control_Supplier.resources
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.userControl.Control_InputValues.resources
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.userControl.fOutputInfor.resources
+C:\Users\kuroba\OneDrive - TRƯỜNG ĐẠI HỌC MỞ TP.HCM\Documents\projeck\Hệ thống quản lý SHOP THỜI TRANG\ShopManeger\ShopThoiTrang\MyApp\GUI\obj\Debug\GUI.userControl.fOutput.resources

@@ -16,7 +16,7 @@ namespace BLL
     public class InputBLL:BaseBLL<InputBLL>
     {
         private InputDAL inputDAL = new InputDAL();
-        private Input_InforDAL inputInforDAL = new Input_InforDAL();
+        private InputInforDAL inputInforDAL = new InputInforDAL();
         public void AddInputAndInput_Infor(List<InputInforDTO> inputInforList)
         {
             try
@@ -60,6 +60,7 @@ namespace BLL
                         // sinh Id tự động cho bảng Input_Infor
                         inputInfor.Id = GenerateAutoId("InputInfor", "Id", "INFOR");
                         inputInfor.IdInput = inputId; // gán IdInput từ InputDTO vào Input_InforDTO
+                        inputInfor.Active = "1"; // gán Active mặc định là 1
                         inputInforDAL.AddInputInfor(inputInfor);
                     }
 

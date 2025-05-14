@@ -118,5 +118,10 @@ namespace GUI
                 this.Show(); // Hiển thị lại Form chính nếu có lỗi
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

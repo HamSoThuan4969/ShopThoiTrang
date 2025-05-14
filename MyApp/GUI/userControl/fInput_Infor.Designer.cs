@@ -35,14 +35,12 @@
             this.tbPrice_Input = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.nbQuantity = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.IdSupplier = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tbMoreInfor_Object = new System.Windows.Forms.TextBox();
             this.checkBoxSelect = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tbPrice_Output = new System.Windows.Forms.TextBox();
+            this.cbbSupplier = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.nbQuantity)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,22 +106,6 @@
             0,
             0});
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(436, 106);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 20);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Id_Supplier";
-            // 
-            // IdSupplier
-            // 
-            this.IdSupplier.Location = new System.Drawing.Point(547, 104);
-            this.IdSupplier.Name = "IdSupplier";
-            this.IdSupplier.Size = new System.Drawing.Size(100, 26);
-            this.IdSupplier.TabIndex = 12;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -150,14 +132,6 @@
             this.checkBoxSelect.TabIndex = 16;
             this.checkBoxSelect.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(206, 93);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(211, 28);
-            this.comboBox1.TabIndex = 17;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -174,6 +148,14 @@
             this.tbPrice_Output.Size = new System.Drawing.Size(104, 26);
             this.tbPrice_Output.TabIndex = 18;
             // 
+            // cbbSupplier
+            // 
+            this.cbbSupplier.FormattingEnabled = true;
+            this.cbbSupplier.Location = new System.Drawing.Point(212, 102);
+            this.cbbSupplier.Name = "cbbSupplier";
+            this.cbbSupplier.Size = new System.Drawing.Size(205, 28);
+            this.cbbSupplier.TabIndex = 20;
+            // 
             // fInput_Infor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -181,14 +163,12 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.cbbSupplier);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbPrice_Output);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.checkBoxSelect);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbMoreInfor_Object);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.IdSupplier);
             this.Controls.Add(this.nbQuantity);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -214,13 +194,11 @@
         private System.Windows.Forms.TextBox tbPrice_Input;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown nbQuantity;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox IdSupplier;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbMoreInfor_Object;
-        private System.Windows.Forms.ComboBox comboBox1;
         public System.Windows.Forms.CheckBox checkBoxSelect;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbPrice_Output;
+        private System.Windows.Forms.ComboBox cbbSupplier;
     }
 }

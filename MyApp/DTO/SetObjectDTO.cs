@@ -8,7 +8,7 @@ namespace DTO
 {
     public class SetObjectDTO
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string DisplayName { get; set; }
     }
 }

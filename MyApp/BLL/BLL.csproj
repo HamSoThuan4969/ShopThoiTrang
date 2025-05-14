@@ -50,9 +50,15 @@
     <Compile Include="CustomerBLL.cs" />
     <Compile Include="GroupCustomerBLL.cs" />
     <Compile Include="InputBLL.cs" />
+    <Compile Include="InputInforBLL.cs" />
+    <Compile Include="ObjectBLL.cs" />
+    <Compile Include="OutputBLL.cs" />
+    <Compile Include="OutputInforBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SaleBLL.cs" />
     <Compile Include="ScheduleBLL.cs" />
+    <Compile Include="SetObjectBLL.cs" />
+    <Compile Include="SupplierBLL.cs" />
     <Compile Include="UsersBLL.cs" />
   </ItemGroup>
   <ItemGroup>

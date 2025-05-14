@@ -14,6 +14,8 @@ namespace DTO
         public string DisplayName_Object { get; set; }
         public int InputPrice { get; set; }
         public int OutputPrice { get; set; }
+        public string Active { get; set; }
+        public string IdSupplier { get; set; }
     }
 
 }

@@ -10,11 +10,15 @@ namespace DTO
     {
         public string Id { get; set; }
         public string IdObject { get; set; }
-        public string IdInputInfor { get; set; }
-        public string IdCustomer { get; set; }
-        public string IdSale_OutputInfor { get; set; }
+        public string IdOutput { get; set; }
         public int Quantity { get; set; }
-        public float InputPrice { get; set; }
+        public string IdCustomer { get; set; }
+        public string IdSale { get; set; }
+        public string InputPrice { get; set; }
+        public int Total { get; set; }
+     
+
+
     }
 
 }

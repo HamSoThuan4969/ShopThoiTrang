@@ -16,6 +16,7 @@ namespace GUI.userControl
     public partial class fInput : UserControl
     {
         public InputBLL inputBLL = new InputBLL();
+        public SupplierBLL supplierBLL = new SupplierBLL();
         public fInput()
         {
             InitializeComponent();
@@ -80,14 +81,22 @@ namespace GUI.userControl
                 }
                 // tạo danh sách InputInfor từ các UserControl đã chọn nè
                 List<InputInforDTO> inputInforList = new List<InputInforDTO>();
-                foreach (var control in selec)
+                foreach (var control in selectedItems)
                 {
+                    // Lấy giá trị từ ComboBox
+                    //string selectedTypeObject = control.IdSupplier; // Giá trị hiển thị
+                    //string selectedId = cbbTypeObject.SelectedValue.ToString(); // Giá trị ẩn (Id)
+
+
                     InputInforDTO inputInfor = new InputInforDTO()
                     {
+
                         DisplayName_Object = control.DisplayName_Object,
                         Quantity = control.Quantity,
                         InputPrice = control.InputPrice,
-                        OutputPrice = control.OutputPrice
+                        OutputPrice = control.OutputPrice,
+                        IdSupplier = control.IdSupplier,
+
                     };
                     inputInforList.Add(inputInfor);
 
@@ -95,7 +104,16 @@ namespace GUI.userControl
                 // Gọi BLL để thêm Input và InputInfor 
                 inputBLL.AddInputAndInput_Infor(inputInforList);
                 MessageBox.Show("Thêm hóa đơn thành công");
-            }catch(Exception ex)
+
+                // xóa những hóa đơn thành công 
+                // Xóa các control đã được tick sau khi thêm thành công
+                foreach (var control in selectedItems)
+                {
+                    pnContainer_Input.Controls.Remove(control);
+                    control.Dispose();
+                }
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show("Lỗi khi thêm hóa đơn GUI: " + ex.Message);
             }

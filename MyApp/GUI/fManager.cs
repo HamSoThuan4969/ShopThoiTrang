@@ -33,13 +33,6 @@ namespace GUI
 
         }
            
-           
-
-            private void btCustomer_Click(object sender, EventArgs e)
-            {
-
-            }
-
             private void fManager_Load(object sender, EventArgs e)
             {
 
@@ -119,6 +112,35 @@ namespace GUI
         {
             pnMain.Controls.Clear();              // Dọn panel
             var uc = new fInput();          // Tạo UC mới
+            uc.Dock = DockStyle.Fill;                 // Căng full panel
+            pnMain.Controls.Add(uc);
+        }
+
+        private void khoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quảnLýSupplierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnMain.Controls.Clear();              // Dọn panel
+            var uc = new Control_Supplier();          // Tạo UC mới
+            uc.Dock = DockStyle.Fill;                 // Căng full panel
+            pnMain.Controls.Add(uc);
+        }
+
+        private void inputWarehouseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnMain.Controls.Clear();              // Dọn panel
+            var uc = new Control_InputValues();          // Tạo UC mới
+            uc.Dock = DockStyle.Fill;                 // Căng full panel
+            pnMain.Controls.Add(uc);
+        }
+
+        private void tínhLươngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnMain.Controls.Clear();              // Dọn panel
+            var uc = new fOutput();          // Tạo UC mới
             uc.Dock = DockStyle.Fill;                 // Căng full panel
             pnMain.Controls.Add(uc);
         }

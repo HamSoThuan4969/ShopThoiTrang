@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class SuplierDTO
+    public class SupplierDTO
     {
         public string Id { get; set; }
         public string DisplayName { get; set; }
-        public string Adress { get; set; }
-        public string Emain { get; set; }
+        public string Address { get; set; }
+        public string Abbreviation { get; set; }
+        public string Email { get; set; }
         public string Phone { get; set; }
-        public string TyObject { get; set; }
+        public string TypeObject { get; set; }
         public string MoreInfor { get; set; }
-        public DateTime ContracDate { get; set; }
+        public DateTime ContractDate { get; set; }
 
     }
 }

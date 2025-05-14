@@ -171,7 +171,11 @@ namespace BLL
     {
         private Sale_DetailDAL saleDetailDAL = new Sale_DetailDAL();
 
-
+        // lấy hết thông Sale_Detail 
+        public List<Sale_DetailDTO> GetAllSale_DetailBLL()
+        {
+            return saleDetailDAL.GetAllSale_Detail();
+        }
         // lấy thông tin bằng Id
         public Sale_DetailDTO GetSale_DetailByIdBLL(string idSale_Detail)
         {
@@ -224,6 +228,8 @@ namespace BLL
 
             return saleDetailDAL.UpdateSale_Detail(saleDetails);
         }
+       
+
 
     }
 

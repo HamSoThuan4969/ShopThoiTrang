@@ -58,8 +58,23 @@ namespace BLL
                 throw new Exception($"Lỗi khi xóa Id trong bảng  {tableName}: {ex.Message} Tầng baseBLL");
             }
         }
-        // phương thức cập nhật dữ liệu - Update
-       
+        // lấy giá trị cho combobox 
+        public List<string> GetDistinctValues(string tableName, string columnName)
+        {
+            try
+            {
+                return baseDAL.GetDistinctValues(tableName, columnName);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Lỗi khi lấy dữ liệu không trùng lặp từ bảng {tableName}, cột {columnName} trong tầng BLL: {ex.Message}");
+            }
+        }
+        public object GetSingleValue(string tableName, string conditionColumn, string conditionValue, string targetColumn)
+        {
+            return baseDAL.GetValueByCondition(tableName, conditionColumn, conditionValue, targetColumn);
+        }
+
 
     }
 }

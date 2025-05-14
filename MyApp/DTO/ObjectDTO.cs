@@ -10,9 +10,12 @@ namespace DTO
     {
         public string Id { get; set; }
         public string DisplayName { get; set; }
-        public int? IdSet { get; set; }  // Có thể null
-        public int IdUnit { get; set; }
-        public int IdSuplier { get; set; }
+        public string IdSet { get; set; }  // Có thể null
+        public string IdSupplier { get; set; }
         public int? InputPrice { get; set; }
+        public int Quantity { get; set; }
+        public int OutputPrice { get; set; }
+        public string IdInputInfor { get; set; }
+
     }
 }

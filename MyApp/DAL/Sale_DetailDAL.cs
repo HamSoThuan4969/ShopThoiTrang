@@ -55,6 +55,7 @@ namespace DAL
                 command.Parameters.AddWithValue("@Description", saleDetail.Description);
             }); 
         }
+       
 
     }
 }
